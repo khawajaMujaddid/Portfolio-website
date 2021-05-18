@@ -1,0 +1,106 @@
+@import "./config.scss";
+/*Desktop View*/
+
+.header {
+  // position: sticky;
+  // z-index: 100;
+  display: flex;
+  background-color: rgb(27, 36, 47);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 55px;
+  height: 60px;
+  font-family: $primary-font;
+  color: white;
+  text-decoration: none;
+  border-bottom: 4px solid $primary-2-color;
+  .logo-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  .nav_options {
+    padding-left: 55px;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 50px;
+    list-style-type: none;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 1rem;
+  }
+  .mobile-option {
+    display: none;
+    transition: 0.2s;
+  }
+  .option :hover {
+    color: white;
+    transition: 0.2s;
+    &:hover {
+      color: $secondary-font;
+    }
+  }
+  .mobile_menu {
+    display: none;
+  }
+
+  @media (max-width: 730px) {
+    /*Mobile View */
+    .header {
+      padding: 0px 10px;
+    }
+    .logo {
+      width: 45px;
+      height: 40px;
+    }
+    .nav_options {
+      margin: 0;
+      display: flex;
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 60px;
+      left: -100%;
+      opacity: 0;
+      transition: all 0.5s ease;
+      flex-direction: column;
+      list-style-type: none;
+      grid-gap: 0px;
+    }
+
+    .nav_options.active {
+      background-color: rgb(102, 102, 102);
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+      align-content: center;
+      padding-left: 0px;
+    }
+    .menu_icon {
+      width: 45px;
+      height: 45px;
+    }
+    .option {
+      border-bottom: 1px solid white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 10vw;
+      padding: 30px 0px;
+    }
+
+    .mobile_menu {
+      display: block;
+    }
+  }
+}
