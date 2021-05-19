@@ -19,6 +19,7 @@
       width: 70px;
     }
   }
+
   #design_container {
     @include about-grids(0 14vw 0 15vw, 6%, 50px, 180px);
     #design-polygon {
@@ -52,6 +53,14 @@
         font-size: 11pt;
         font-weight: 500;
       }
+    }
+  }
+  @media (max-width: 1260px) and (min-width: 889px) {
+    #design_container > *:last-child {
+      margin-left: 24vw;
+      width: 170px;
+      margin-top: 3vh;
+      // display: none;
     }
   }
   #profile_section {

@@ -15,19 +15,44 @@ const NavBar = () => {
         </div>
         <ul className={click ? "nav_options active" : "nav_options"}>
           <li className="option" onClick={closeMobileMenu}>
-            <a>HOME</a>
+            <a
+              href="#home"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              HOME
+            </a>
           </li>
           <li className="option" onClick={closeMobileMenu}>
-            <a>ABOUT</a>
+            <a
+              href="#about"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              ABOUT
+            </a>
           </li>
           <li className="option" onClick={closeMobileMenu}>
-            <a>PROJECTS</a>
+            <a
+              href="#contact"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              PROJECTS
+            </a>
           </li>
           <li className="option" onClick={closeMobileMenu}>
-            <a>BLOG</a>
+            <a
+              href="#blogs"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              BLOG
+            </a>
           </li>
           <li className="option" onClick={closeMobileMenu}>
-            <a>CONTACT</a>
+            <a
+              href="#contact"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              CONTACT
+            </a>
           </li>
         </ul>
       </div>

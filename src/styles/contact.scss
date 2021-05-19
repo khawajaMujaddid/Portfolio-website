@@ -2,15 +2,13 @@
 @import "./about.scss";
 
 #contact_container {
-  // margin: 20vh 0;
-  margin: -80vh 0 10vh 0;
-  clip-path: polygon(100% 80vh, 100% 99%, 0 100%, 0 80vh, 52% 54%);
+  margin: -60px 0 6vh 0;
+  clip-path: polygon(0 100%, 0 29%, 49% 14%, 100% 30%, 100% 100%);
   background-color: rgb(37, 41, 52);
-  height: 1200px;
-  //   z-index: 1;
+  height: 600px;
   padding: 7vh 0;
   #heading_container {
-    margin-top: 100vh;
+    margin-top: 15vh;
     display: grid;
     place-items: center;
     #heading {

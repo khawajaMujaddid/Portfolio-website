@@ -5,6 +5,7 @@ import Blogs from "./components/blogs";
 import ContactUS from "./components/contact";
 import NavBar from "./components/header";
 import Home from "./components/home";
+import Footer from "./components/footer";
 
 function App() {
   const [mobileCheckMark, setMobileCheckMark] = React.useState(false);
@@ -34,8 +35,11 @@ function App() {
       <span id="blogs" style={{ marginTop: "5vh" }}>
         <Blogs />
       </span>
-      <span id="contact" style={{ marginTop: "5vh" }}>
+      <span id="contact">
         <ContactUS />
+      </span>
+      <span>
+        <Footer />
       </span>
     </div>
   );

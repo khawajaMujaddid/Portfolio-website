@@ -13,7 +13,7 @@
     }
   }
   #blogs-section {
-    @include about-grids(0 7vw 0 10vw, 3%, 90px, 330px);
+    @include about-grids(-5vh 7vw 0 10vw, 3%, 90px, 330px);
     row-gap: 2rem;
     line-height: 1.5rem;
     #blog-image {

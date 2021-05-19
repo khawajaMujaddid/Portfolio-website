@@ -1,0 +1,26 @@
+@import "./config.scss";
+#footer-container {
+  margin-top: -6vh;
+  padding: 15vh 0 10vh 0;
+  display: grid;
+  background-color: rgb(27, 36, 47);
+  place-items: center;
+  #icons-container {
+    display: flex;
+    column-gap: 3vw;
+    #social-icon {
+      color: white;
+      padding: 1vh 1.5vh;
+      background-color: rgb(38, 47, 56);
+      font-size: 20pt;
+    }
+  }
+  #footnote {
+    color: #8f9aa7;
+    font-size: 10pt;
+    margin-top: 5vh;
+    opacity: 0.6;
+    font-family: $primary-font;
+    font-weight: light;
+  }
+}

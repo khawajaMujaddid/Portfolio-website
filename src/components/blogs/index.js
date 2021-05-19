@@ -10,7 +10,7 @@ export default function Blogs() {
     <div id="blogs-container">
       <div id="heading_container">
         <h2 id="heading">Blogs</h2>
-        <h2 id="heading_bar"></h2>
+        <h2 id="heading_bar">{}</h2>
       </div>
       <div id="blogs-section">
         <SingleBlog

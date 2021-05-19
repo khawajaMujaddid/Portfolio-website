@@ -11,7 +11,15 @@ export default function Introduction() {
           passion for UI effects, animations and creating intuitive, dynamic
           user experiences. <br />
           <span style={{ justifyContent: "center" }}>
-            <span style={{ color: "blue" }}>Let's make something special.</span>
+            <a
+              href="#contact"
+              style={{
+                color: "blue",
+                textDecoration: "none",
+              }}
+            >
+              Let's make something special.
+            </a>
           </span>
         </p>
       </div>

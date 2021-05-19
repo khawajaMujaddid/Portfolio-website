@@ -2,9 +2,9 @@ import React from "react";
 
 export default function SingleBlog({ title, date, description, image, link }) {
   return (
-    <div style={{ marginTop: "2vh" }}>
+    <div style={{ marginTop: "10vh" }}>
       <div id="blog-image">
-        <img src={image} alt="blog image" id="blog-image" />
+        <img src={image} alt="blog-pic" id="blog-image" />
       </div>
       <h3 id="blog-title">
         <a
@@ -16,7 +16,7 @@ export default function SingleBlog({ title, date, description, image, link }) {
         </a>
       </h3>
       <h6 id="blog-date">{date}</h6>
-      <h2 id="blog-bar"></h2>
+      <h2 id="blog-bar">{}</h2>
       <p id="blog-description">{description}</p>
     </div>
   );
