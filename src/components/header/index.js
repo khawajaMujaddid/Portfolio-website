@@ -21,7 +21,7 @@ const NavBar = () => {
             <a>ABOUT</a>
           </li>
           <li className="option" onClick={closeMobileMenu}>
-            <a>PORTFOLIO</a>
+            <a>PROJECTS</a>
           </li>
           <li className="option" onClick={closeMobileMenu}>
             <a>BLOG</a>

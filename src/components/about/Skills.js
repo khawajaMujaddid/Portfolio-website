@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Skills({ skill, width }) {
-  let bar_width = (40 * width) / 100;
+  let bar_width = (42 * width) / 100;
   let bar_width_max = bar_width + 20;
   bar_width = bar_width.toString() + "%";
   bar_width_max = bar_width_max.toString() + "%";

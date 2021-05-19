@@ -1,0 +1,85 @@
+@import "./config.scss";
+@import "./about.scss";
+
+#contact_container {
+  // margin: 20vh 0;
+  margin: -80vh 0 10vh 0;
+  clip-path: polygon(100% 80vh, 100% 99%, 0 100%, 0 80vh, 52% 54%);
+  background-color: rgb(37, 41, 52);
+  height: 1200px;
+  //   z-index: 1;
+  padding: 7vh 0;
+  #heading_container {
+    margin-top: 100vh;
+    display: grid;
+    place-items: center;
+    #heading {
+      color: #ffffff;
+      font-family: $primary-font-bold;
+      font-size: 25pt;
+      text-transform: uppercase;
+      font-weight: bolder;
+    }
+    #heading_bar {
+      background: #ffffff;
+      height: 4px;
+      margin: 25px 0 30px 0;
+      width: 70px;
+    }
+    #contact_sub_heading {
+      color: $primary-2-color;
+      font-family: $primary-font;
+      font-weight: bolder;
+      font-size: 16pt;
+    }
+    @media (max-width: 600px) {
+      #contact_sub_heading {
+        font-size: 4vw;
+      }
+    }
+  }
+  #form-container {
+    margin: 10pt 20pt;
+    display: grid;
+    place-items: center;
+
+    #input_field {
+      outline: none;
+      padding-left: 1.5vw;
+      height: 6vh;
+      font-size: 9pt;
+      margin-top: 2vh;
+      width: 460px;
+      color: white;
+      border: none;
+      background-color: rgb(30, 36, 44);
+    }
+    #message {
+      @extend #input_field;
+      height: 16vh;
+      padding-top: 2vh;
+    }
+    #form_submit_btn {
+      margin-top: 1.5vh;
+      @include button();
+      float: right;
+      border: 1px solid rgb(255, 255, 255);
+      color: white;
+      text-transform: uppercase;
+      padding: 1vw;
+    }
+    @media (max-width: 600px) {
+      #input_field {
+        width: 75vw;
+      }
+      #form_submit_btn {
+        padding: 2vw;
+      }
+    }
+    @media (max-width: 900px) {
+      #form_submit_btn {
+        padding: 1.5vw;
+      }
+    }
+  }
+}
