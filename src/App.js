@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import About from "./components/about";
+import Blogs from "./components/blogs";
 import NavBar from "./components/header";
 import Home from "./components/home";
 
@@ -28,6 +29,9 @@ function App() {
       </span>
       <span id="about" style={{ marginTop: "5vh" }}>
         <About />
+      </span>
+      <span id="blogs" style={{ marginTop: "5vh" }}>
+        <Blogs />
       </span>
     </div>
   );

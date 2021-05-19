@@ -44,16 +44,17 @@ export default function About() {
       <div id="profile_section">
         <Introduction />
         <span id="skills-section">
-          <Skills skill={"CSS"} width={90} />
+          <Skills skill={"CSS"} width={80} />
           <Skills skill={"HTML"} width={90} />
           <Skills skill={"Javascript"} width={80} />
           <Skills skill={"ReactJS"} width={90} />
           <Skills skill={"NodeJS"} width={80} />
           <Skills skill={"Redux"} width={80} />
-          <Skills skill={"UI Tools"} width={70} />
+          <Skills skill={"UI Tools"} width={50} />
           <Skills skill={"NextJS"} width={60} />
           <Skills skill={"Firebase"} width={70} />
-          <Skills skill={"GraphQL"} width={70} />
+          <Skills skill={"GraphQL"} width={60} />
+          <Skills skill={"PassportJS"} width={65} />
         </span>
       </div>
     </div>

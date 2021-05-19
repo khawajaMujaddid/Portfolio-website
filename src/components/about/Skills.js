@@ -12,7 +12,9 @@ export default function Skills({ skill, width }) {
       <div
         id="skill-width"
         style={{
-          width: `clamp(${bar_width}, ${bar_width_max}, ${bar_width_max})`,
+          width: `${bar_width_max}`,
+          maxWidth: `${bar_width_max}`,
+          minWidth: `${bar_width}`,
         }}
       ></div>
       <div id="skill-bar">{width}%</div>

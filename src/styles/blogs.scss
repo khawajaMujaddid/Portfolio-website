@@ -1,0 +1,63 @@
+@import "./config.scss";
+@import "./about.scss";
+
+#blogs-container {
+  @extend #about_container;
+  #heading_container {
+    @extend #main_heading_container;
+    #heading {
+      @extend #main_heading;
+    }
+    #heading_bar {
+      @extend #main_heading_bar;
+    }
+  }
+  #blogs-section {
+    @include about-grids(0 7vw 0 10vw, 3%, 90px, 330px);
+    row-gap: 2rem;
+    line-height: 1.5rem;
+    #blog-image {
+      width: 330px;
+    }
+    #blog-title {
+      padding-top: 2vh;
+      font-family: $primary-font-bold;
+      font-size: 15pt;
+      color: #616161;
+
+      transition: 0.2s;
+      &:hover {
+        color: $primary-2-color;
+        cursor: pointer;
+      }
+    }
+    #blog-bar {
+      background: #04c2c9;
+      height: 3px;
+      margin: 10px 0px;
+      width: 25%;
+    }
+    #blog-date {
+      padding-top: 1vh;
+      font-family: $primary-font;
+      font-weight: lighter;
+      color: #616161;
+      font-size: 10pt;
+    }
+    #blog-description {
+      padding-top: 2vh;
+      font-weight: medium;
+      font-size: 11pt;
+      text-align: justify;
+      font-family: $primary-font;
+    }
+  }
+  @media (max-width: 1500px) and (min-width: 1200px) {
+    #blogs-section {
+      #blogs-section:nth-child(4n) {
+        margin-left: 100px;
+        display: none;
+      }
+    }
+  }
+}
