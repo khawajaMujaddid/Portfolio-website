@@ -10,23 +10,25 @@ export default function Projects() {
     deployed: null,
   });
   return (
-    <div id="projects-container">
-      <div id="heading_container">
-        <h2 id="heading">Projects</h2>
-        <h2 id="heading_bar">{}</h2>
-      </div>
-      <ImageGrid
-        setSelectedImg={setSelectedImg}
-        setSelectedImgData={setSelectedImgData}
-      />
-      {selectedImg && (
-        <Modal
-          selectedImg={selectedImg}
+    <div style={{ marginTop: "15vh" }}>
+      <div id="projects-container">
+        <div id="heading_container">
+          <h2 id="heading">Projects</h2>
+          <h2 id="heading_bar">{}</h2>
+        </div>
+        <ImageGrid
           setSelectedImg={setSelectedImg}
-          selectedImgData={selectedImgData}
           setSelectedImgData={setSelectedImgData}
         />
-      )}
+        {selectedImg && (
+          <Modal
+            selectedImg={selectedImg}
+            setSelectedImg={setSelectedImg}
+            selectedImgData={selectedImgData}
+            setSelectedImgData={setSelectedImgData}
+          />
+        )}
+      </div>
     </div>
   );
 }
