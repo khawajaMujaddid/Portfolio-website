@@ -30,13 +30,13 @@ function App() {
         {mobileCheckMark === false ? <Home /> : <NavBar />}
         {mobileCheckMark === false ? <NavBar /> : <Home />}
       </span>
-      <span id="about" style={{ marginTop: "5vh" }}>
+      <span id="about" style={{ marginTop: "2vh" }}>
         <About />
       </span>
       <span id="projects" style={{ marginTop: "5vh" }}>
         <Projects />
       </span>
-      <span id="blogs" style={{ marginTop: "5vh" }}>
+      <span id="blogs" style={{ marginTop: "2vh" }}>
         <Blogs />
       </span>
       <span id="contact">

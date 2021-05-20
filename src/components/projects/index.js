@@ -5,15 +5,27 @@ import "../../styles/projects.scss";
 
 export default function Projects() {
   const [selectedImg, setSelectedImg] = React.useState(null);
+  const [selectedImgData, setSelectedImgData] = React.useState({
+    description: null,
+    deployed: null,
+  });
   return (
     <div id="projects-container">
       <div id="heading_container">
         <h2 id="heading">Projects</h2>
         <h2 id="heading_bar">{}</h2>
       </div>
-      <ImageGrid setSelectedImg={setSelectedImg} />
+      <ImageGrid
+        setSelectedImg={setSelectedImg}
+        setSelectedImgData={setSelectedImgData}
+      />
       {selectedImg && (
-        <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />
+        <Modal
+          selectedImg={selectedImg}
+          setSelectedImg={setSelectedImg}
+          selectedImgData={selectedImgData}
+          setSelectedImgData={setSelectedImgData}
+        />
       )}
     </div>
   );
