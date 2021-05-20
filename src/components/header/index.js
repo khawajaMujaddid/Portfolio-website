@@ -32,7 +32,7 @@ const NavBar = () => {
           </li>
           <li className="option" onClick={closeMobileMenu}>
             <a
-              href="#contact"
+              href="#projects"
               style={{ textDecoration: "none", color: "inherit" }}
             >
               PROJECTS
