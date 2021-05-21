@@ -61,11 +61,11 @@ export default function Home() {
               value: 150,
               density: {
                 enable: true,
-                value_area: 1000,
+                value_area: 700,
               },
             },
-            color: {
-              value: "#fff",
+            backgroundImage: {
+              value: "linearGradient(rgb(4, 194, 201),rgb(227, 27, 109))",
             },
             opacity: {
               value: 0.3,

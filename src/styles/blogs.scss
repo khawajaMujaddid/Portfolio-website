@@ -4,6 +4,7 @@
 #blogs-container {
   @extend #about_container;
   padding: 5vh 0 7vh 0;
+
   #heading_container {
     @extend #main_heading_container;
     #heading {

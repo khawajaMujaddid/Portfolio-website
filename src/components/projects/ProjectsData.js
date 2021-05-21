@@ -19,7 +19,7 @@ export const data = [
     github: "https://github.com/IbadAhmad80/GymHut",
     deployed: "https://gymhut.netlify.app/",
     description:
-      "Description of the project i have created in the projects section",
+      "Gym website created with MERN Stack and Redux as a State Management Tool",
   },
   {
     name: "Trimax Solutions",
@@ -29,7 +29,7 @@ export const data = [
     github: "https://github.com/Trimax-Solutions/portfolio",
     deployed: "http://trimax-solutions.netlify.app/",
     description:
-      "Description of the project i have created in the projects section",
+      "Organization Portfolio styled with framer motion and CSS with JS UI Library React used as frontend",
   },
   {
     name: "Instagram Clone",
@@ -38,8 +38,7 @@ export const data = [
     technologies: " React / Firebase ",
     github: "https://github.com/IbadAhmad80/Instagarm-Clone",
     deployed: "https://instagarm-clone-5b04e.web.app/",
-    description:
-      "Description of the project i have created in the projects section",
+    description: "Website with Instagarm basic functionalities embedded in",
   },
   {
     name: "BuzzFeed Clone",
@@ -48,8 +47,7 @@ export const data = [
     technologies: " React / CSS ",
     github: "https://github.com/IbadAhmad80/BuzzFeed-Clone",
     deployed: "https://radiant-waters-39974.herokuapp.com/",
-    description:
-      "Description of the project i have created in the projects section",
+    description: "Clone of American Internet media website Buzzfeed",
   },
   {
     name: "Blogging Website",
@@ -59,7 +57,7 @@ export const data = [
     github: "https://github.com/IbadAhmad80/Blogging-Web_App",
     deployed: "",
     description:
-      "Description of the project i have created in the projects section",
+      "Blogging app with CMS and Server side React as a primary tools",
   },
 
   {
@@ -69,7 +67,6 @@ export const data = [
     technologies: " React / SASS ",
     github: "https://github.com/IbadAhmad80/Portfolio",
     deployed: "https://findibad.netlify.app/",
-    description:
-      "Description of the project i have created in the projects section",
+    description: "Portfolio website with CSS Proprocessor SASS and React",
   },
 ];

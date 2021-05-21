@@ -54,15 +54,16 @@ body {
     }
     #view_work_btn {
       @include button();
-      padding: 14pt 10pt;
+      padding: 12pt 10pt;
       color: white;
+      font-weight: medium;
       #workbtn_logo {
         padding-top: 13vw;
       }
     }
     @media (max-width: 559px) {
       #view_work_btn {
-        padding: 2vh 4vw;
+        padding: 1.7vh 3.5vw;
       }
     }
   }

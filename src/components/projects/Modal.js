@@ -26,18 +26,23 @@ const Modal = ({
       <motion.div
         id="selected-image-data"
         initial={{ opacity: 0 }}
+        transition={{ delay: 0.8 }}
         animate={{ opacity: 1 }}
       >
         <p id="selected-image-des">{selectedImgData.description}</p>
-        <button id="site-link">
-          <a
-            href={selectedImgData.deployed}
-            target="blank"
-            style={{ textDecoration: "none", color: "inherit" }}
-          >
-            <FaShareSquare /> &nbsp;Visit Site
-          </a>
-        </button>
+        {selectedImgData.deployed ? (
+          <button id="site-link">
+            <a
+              href={selectedImgData.deployed}
+              target="blank"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <FaShareSquare /> &nbsp;Visit Site
+            </a>
+          </button>
+        ) : (
+          ""
+        )}
       </motion.div>
     </motion.div>
   );

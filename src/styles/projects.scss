@@ -123,9 +123,9 @@
   #selected-image-data {
     margin: 0vh auto;
     width: 75vw;
-    height: 20vh;
+    height: auto;
     background-color: white;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 1.7rem 2rem;
     box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
     border: 3px solid white;
     #selected-image-des {
@@ -133,6 +133,7 @@
       font-size: 1rem;
       font-weight: bold;
       text-align: justify;
+      color: rgb(102, 102, 102);
     }
     #site-link {
       margin: 10px auto;
@@ -159,26 +160,18 @@
       margin: 15vh auto;
       margin-bottom: 0;
     }
-    #selected-image-data {
-      height: 15vh;
-    }
   }
   @media (max-width: 750px) {
     #backdrop img {
-      height: 40vh;
+      height: 39vh;
       margin: 22vh auto;
       margin-bottom: 0;
-    }
-    #selected-image-data {
-      #selected-image-des {
-        font-size: 0.8rem;
-      }
     }
   }
   @media (max-width: 600px) {
     #backdrop img {
       height: 45vh;
-      margin: 19vh auto;
+      margin: 17vh auto;
       margin-bottom: 0;
     }
   }
@@ -190,7 +183,7 @@
   }
   @media (max-width: 390px) {
     #backdrop img {
-      height: 35vh;
+      height: 33vh;
       margin: 23vh auto;
       margin-bottom: 0;
     }
@@ -200,11 +193,6 @@
       height: 35vh;
       margin: 23vh auto;
       margin-bottom: 0;
-    }
-    #selected-image-data {
-      #selected-image-des {
-        display: none;
-      }
     }
   }
 }
