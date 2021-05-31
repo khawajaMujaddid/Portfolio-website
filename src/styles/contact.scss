@@ -7,6 +7,8 @@
   background-color: rgb(37, 41, 52);
   height: 800px;
   padding: 7vh 0;
+  z-index: -1;
+  // position: absolute;
   #heading_container {
     margin-top: 27vh;
     display: grid;

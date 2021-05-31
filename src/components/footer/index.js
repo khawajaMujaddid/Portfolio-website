@@ -8,16 +8,40 @@ export default function Footer() {
     <div id="footer-container">
       <div id="icons-container">
         <div id="social-icon">
-          <AiFillFacebook />
+          <a
+            href="https://www.facebook.com/?react=AQDaeXFepi_ZImXLzCU"
+            target="blank"
+            style={{ color: "inherit" }}
+          >
+            <AiFillFacebook />
+          </a>
         </div>
         <div id="social-icon">
-          <AiFillLinkedin />
+          <a
+            href="https://linkedin.com/in/ibad-ahmad"
+            target="blank"
+            style={{ color: "inherit" }}
+          >
+            <AiFillLinkedin />
+          </a>
         </div>
         <div id="social-icon">
-          <AiFillGithub />
+          <a
+            href="https://github.com/IbadAhmad80"
+            target="blank"
+            style={{ color: "inherit" }}
+          >
+            <AiFillGithub />
+          </a>
         </div>
         <div id="social-icon">
-          <FaStackOverflow />
+          <a
+            href="https://stackoverflow.com/users/story/14998000?view=Timeline"
+            target="blank"
+            style={{ color: "inherit" }}
+          >
+            <FaStackOverflow />
+          </a>
         </div>
       </div>
       <h6 id="footnote">

@@ -1,4 +1,10 @@
 import React from "react";
+import Axios from "axios";
+import {
+  NotificationManager,
+  NotificationContainer,
+} from "react-notifications";
+import "react-notifications/lib/notifications.css";
 
 export default function ContactForm() {
   const [formData, setData] = React.useState({
@@ -8,14 +14,27 @@ export default function ContactForm() {
   });
   const handleSubmit = (e) => {
     e.preventDefault();
+    // console.log(formData);
+    Axios.post("https://test-emailserver.herokuapp.com/sendEmail", formData)
+      .then((_) => {
+        NotificationManager.success(
+          "Email sent",
+          "I'll be in contact with you shortly",
+          4000
+        );
+        setData({ email: "", name: "", message: "" });
+      })
+      .catch((error) => {
+        NotificationManager.error("Error message", `${error}`, 5000);
+      });
   };
   return (
-    <div>
+    <div style={{ zIndex: "100" }}>
       <form onSubmit={handleSubmit}>
         <input
           id="input_field"
           type="text"
-          value={formData.firstName}
+          value={formData.name}
           onChange={(e) => setData({ ...formData, name: e.target.value })}
           required
           placeholder="Name (1-12 char)"
@@ -42,6 +61,7 @@ export default function ContactForm() {
           placeholder="Message (>1)"
         />
         <br />
+        <NotificationContainer />
         <button type="submit" id="form_submit_btn">
           Send
         </button>

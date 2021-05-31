@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/contact.scss";
 import ContactForm from "./Form";
+
 import { MdArrowUpward } from "react-icons/md";
 
 export default function ContactUS() {

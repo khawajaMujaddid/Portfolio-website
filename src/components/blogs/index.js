@@ -47,7 +47,7 @@ export default function Blogs() {
           }
         />
 
-        <SingleBlog
+        {/* <SingleBlog
           title={"Why one Should use Redux?"}
           description={
             "Redux is an open-source JavaScript library for managing application state. It is most commonly used with libraries such as React or Angular for building user interfaces. Similar to Facebook's Flux architecture, it was created by Dan Abramov and Andrew Clark back then."
@@ -57,7 +57,7 @@ export default function Blogs() {
           link={
             "https://ibad23ahmad.medium.com/why-one-should-use-redux-e1057c24e6ab"
           }
-        />
+        /> */}
       </div>
     </div>
   );
