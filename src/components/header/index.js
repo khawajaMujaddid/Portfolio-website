@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "../../styles/header.scss";
 import { AiOutlineMenu, AiOutlineCloseCircle } from "react-icons/ai";
-import { GiSemiClosedEye } from "react-icons/gi";
+// import logo from "../../assets/logo.png";
+import { RiPassportFill } from "react-icons/ri";
 
 const NavBar = () => {
   const [click, setClick] = useState(false);
@@ -11,7 +12,7 @@ const NavBar = () => {
     <div className="header">
       <div className="logo-nav">
         <div className="logo-container">
-          <GiSemiClosedEye className="logo" />
+          <RiPassportFill className="logo" />
         </div>
         <ul className={click ? "nav_options active" : "nav_options"}>
           <li className="option" onClick={closeMobileMenu}>
