@@ -43,7 +43,10 @@ export default function Home() {
         </h1>
         <br />
         <button id="view_work_btn">
-          <a href="#blogs" style={{ textDecoration: "none", color: "inherit" }}>
+          <a
+            href="#projects"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
             View My Work
           </a>
           <span id="workbtn_logo">

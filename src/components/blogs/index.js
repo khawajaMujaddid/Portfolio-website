@@ -4,6 +4,7 @@ import SingleBlog from "./SingleBlog";
 import redux from "../../assets/redux-blog.jpg";
 import react from "../../assets/react-blog.jpg";
 import web from "../../assets/web-blog.jpg";
+import csr from "../../assets/csr-ssr-blog.jpg";
 
 export default function Blogs() {
   return (
@@ -25,14 +26,14 @@ export default function Blogs() {
           }
         />
         <SingleBlog
-          title={"Getting Started with React JS"}
-          date={"May 11, 2021"}
+          title={"CSR VS SSR for Development"}
           description={
-            "React is an open-source front-end JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page."
+            "Client-side rendering manages the routing dynamically without refreshing the page every time a user request. But server-side rendering is able to display a fully populated page on the first load for any route of the website, whereas client-side rendering displays a blank page first."
           }
-          image={react}
+          date={"June 6, 2021"}
+          image={csr}
           link={
-            "https://ibad23ahmad.medium.com/getting-started-with-react-js-db3bf6134f14"
+            "https://ibad23ahmad.medium.com/client-side-rendering-csr-vs-server-side-rendering-ssr-b98c032005c0"
           }
         />
         <SingleBlog
@@ -46,18 +47,17 @@ export default function Blogs() {
             "https://ibad23ahmad.medium.com/road-map-for-web-development-in-2021-3ed9b5d56aa9"
           }
         />
-
-        {/* <SingleBlog
-          title={"Why one Should use Redux?"}
+        <SingleBlog
+          title={"Getting Started with React JS"}
+          date={"May 11, 2021"}
           description={
-            "Redux is an open-source JavaScript library for managing application state. It is most commonly used with libraries such as React or Angular for building user interfaces. Similar to Facebook's Flux architecture, it was created by Dan Abramov and Andrew Clark back then."
+            "React is an open-source front-end JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page."
           }
-          date={"May 15, 2021"}
-          image={redux}
+          image={react}
           link={
-            "https://ibad23ahmad.medium.com/why-one-should-use-redux-e1057c24e6ab"
+            "https://ibad23ahmad.medium.com/getting-started-with-react-js-db3bf6134f14"
           }
-        /> */}
+        />
       </div>
     </div>
   );

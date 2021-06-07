@@ -65,7 +65,7 @@
     .nav_options {
       margin: 0;
       display: flex;
-      width: 100%;
+      width: 80%;
       height: auto;
       position: absolute;
       top: 60px;
@@ -78,24 +78,24 @@
     }
 
     .nav_options.active {
-      background-color: rgb(102, 102, 102);
+      background-color: $primary-2-color;
       left: 0;
       opacity: 1;
-      transition: all 0.5s ease;
+      transition: all 0.8s ease;
       z-index: 1;
       align-content: center;
       padding-left: 0px;
     }
     .menu_icon {
-      width: 45px;
-      height: 45px;
+      width: 55px;
+      height: 55px;
     }
     .option {
       border-bottom: 1px solid white;
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 10vw;
+      height: 6vh;
       padding: 30px 0px;
     }
 
