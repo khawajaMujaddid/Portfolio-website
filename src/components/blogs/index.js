@@ -13,7 +13,7 @@ export default function Blogs() {
         <h2 id="heading">Blogs</h2>
         <h2 id="heading_bar">{}</h2>
       </div>
-      <div id="blogs-section">
+      <div id="blogs-section" data-aos="zoom-out">
         <SingleBlog
           title={"Why one Should use Redux?"}
           date={"May 15, 2021"}

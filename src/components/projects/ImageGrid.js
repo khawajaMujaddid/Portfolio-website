@@ -4,7 +4,7 @@ import { data } from "./ProjectsData";
 
 export default function ImageGrid({ setSelectedImg, setSelectedImgData }) {
   return (
-    <div id="img-grid">
+    <div id="img-grid" data-aos="zoom-in">
       {data &&
         data.map((doc) => (
           <motion.div

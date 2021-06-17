@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Introduction() {
   return (
-    <div id="profile-container">
+    <div id="profile-container" data-aos="fade-right">
       <div id="profile-image"></div>
       <div id="profile-introduction">
         <h5 id="who-this">Who's this guy</h5>

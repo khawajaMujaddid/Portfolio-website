@@ -22,7 +22,7 @@
   }
 
   #design_container {
-    @include about-grids(5vh 14vw 0 15vw, 6%, 50px, 180px);
+    @include about-grids(1vh 14vw 0 15vw, 6%, 50px, 180px);
     #design-polygon {
       height: 101px;
       // width: clamp(120px, 120px, 120px);

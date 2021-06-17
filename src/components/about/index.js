@@ -15,7 +15,7 @@ export default function About() {
         <h2 id="main_heading">About</h2>
         <h2 id="main_heading_bar">{}</h2>
       </div>
-      <div id="design_container">
+      <div id="design_container" data-aos="zoom-in">
         <Designs
           title={"Fast"}
           description={
@@ -43,7 +43,7 @@ export default function About() {
       </div>
       <div id="profile_section">
         <Introduction />
-        <span id="skills-section">
+        <span id="skills-section" data-aos="fade-left">
           <Skills skill={"CSS"} width={80} />
           <Skills skill={"HTML"} width={90} />
           <Skills skill={"Javascript"} width={80} />

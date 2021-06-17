@@ -61,7 +61,7 @@ export default function Home() {
         params={{
           particles: {
             number: {
-              value: 150,
+              value: 70,
               density: {
                 enable: true,
                 value_area: 700,
@@ -71,7 +71,7 @@ export default function Home() {
               value: "linearGradient(rgb(4, 194, 201),rgb(227, 27, 109))",
             },
             opacity: {
-              value: 0.3,
+              value: 0.15,
               anim: {
                 enable: true,
               },

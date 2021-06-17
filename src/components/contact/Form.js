@@ -29,7 +29,7 @@ export default function ContactForm() {
       });
   };
   return (
-    <div style={{ zIndex: "100" }}>
+    <div style={{ zIndex: "100" }} data-aos="fade-up" data-aos-offset="10">
       <form onSubmit={handleSubmit}>
         <input
           id="input_field"
