@@ -11,6 +11,8 @@ export default function Skills({ skill, width }) {
       <div id="skill-name">{skill}</div>
       <div
         id="skill-width"
+        // data-aos="slide-right"
+        // data-aos-duration="2000"
         style={{
           width: `${bar_width_max}`,
           maxWidth: `${bar_width_max}`,

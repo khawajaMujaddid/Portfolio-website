@@ -9,15 +9,15 @@ export default function Projects() {
     description: null,
     deployed: null,
   });
-  
-   
-    
-
 
   return (
     <div style={{ marginTop: "15vh" }}>
       <div id="projects-container">
-        <div id="heading_container">
+        <div
+          id="heading_container"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
           <h2 id="heading">Projects</h2>
           <h2 id="heading_bar">{}</h2>
         </div>

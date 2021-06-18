@@ -25,7 +25,7 @@ function App() {
       },
       true
     );
-  });
+  }, []);
 
   React.useEffect(() => {
     Aos.init({

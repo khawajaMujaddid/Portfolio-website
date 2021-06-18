@@ -6,7 +6,7 @@ import "../../styles/footer.scss";
 export default function Footer() {
   return (
     <div id="footer-container">
-      <div id="icons-container" data-aos="fade-right">
+      <div id="icons-container" data-aos="fade-right" data-aos-offset="10">
         <div id="social-icon">
           <a
             href="https://www.facebook.com/?react=AQDaeXFepi_ZImXLzCU"

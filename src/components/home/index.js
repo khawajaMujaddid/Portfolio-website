@@ -77,7 +77,7 @@ export default function Home() {
               },
             },
             size: {
-              value: 7,
+              value: 5,
               random: true,
               anim: {
                 enable: true,
@@ -88,7 +88,7 @@ export default function Home() {
               enable: false,
             },
             move: {
-              speed: 0.43,
+              speed: 0.4,
             },
           },
         }}

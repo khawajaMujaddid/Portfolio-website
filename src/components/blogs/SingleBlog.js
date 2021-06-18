@@ -3,7 +3,7 @@ import React from "react";
 export default function SingleBlog({ title, date, description, image, link }) {
   return (
     <div style={{ marginTop: "10vh" }}>
-      <div id="blog-image">
+      <div id="blog-image" data-aos="zoom-in-right">
         <img src={image} alt="blog-pic" id="blog-image" />
       </div>
       <h3 id="blog-title">

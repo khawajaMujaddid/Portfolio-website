@@ -9,11 +9,15 @@ import csr from "../../assets/csr-ssr-blog.jpg";
 export default function Blogs() {
   return (
     <div id="blogs-container">
-      <div id="heading_container">
+      <div
+        id="heading_container"
+        data-aos="fade-right"
+        data-aos-duration="2000"
+      >
         <h2 id="heading">Blogs</h2>
         <h2 id="heading_bar">{}</h2>
       </div>
-      <div id="blogs-section" data-aos="zoom-out">
+      <div id="blogs-section">
         <SingleBlog
           title={"Why one Should use Redux?"}
           date={"May 15, 2021"}

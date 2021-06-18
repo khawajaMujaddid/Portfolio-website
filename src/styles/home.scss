@@ -7,10 +7,12 @@ body {
   }
   #particles-js {
     background: radial-gradient(circle, $primary-color 0%, $primary-color);
+    // background: radial-gradient($primary-color 0%, $primary-color);
     height: 100vh;
   }
   #welcome {
     position: absolute;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,8 +61,15 @@ body {
       font-weight: medium;
       #workbtn_logo {
         padding-top: 13vw;
+        &:hover {
+          // #workbtn_logo {
+          transition: 0.7s;
+          transform: rotate(180deg);
+          // }
+        }
       }
     }
+
     @media (max-width: 559px) {
       #view_work_btn {
         padding: 1.7vh 3.5vw;

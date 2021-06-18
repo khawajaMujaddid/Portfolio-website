@@ -11,7 +11,11 @@ import Skills from "./Skills";
 export default function About() {
   return (
     <div id="about_container">
-      <div id="main_heading_container">
+      <div
+        id="main_heading_container"
+        data-aos="fade-right"
+        data-aos-duration="2000"
+      >
         <h2 id="main_heading">About</h2>
         <h2 id="main_heading_bar">{}</h2>
       </div>

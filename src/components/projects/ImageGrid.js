@@ -4,7 +4,7 @@ import { data } from "./ProjectsData";
 
 export default function ImageGrid({ setSelectedImg, setSelectedImgData }) {
   return (
-    <div id="img-grid" data-aos="zoom-in">
+    <div id="img-grid">
       {data &&
         data.map((doc) => (
           <motion.div
@@ -19,6 +19,7 @@ export default function ImageGrid({ setSelectedImg, setSelectedImgData }) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1 }}
+              data-aos="zoom-in"
             />
             <div id="overlay">
               <div id="project-name">{doc.name}</div>
