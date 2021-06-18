@@ -42,18 +42,18 @@ export default function Home() {
           </span>
         </h1>
         <br />
-        <button id="view_work_btn">
-          <a
-            href="#projects"
-            style={{ textDecoration: "none", color: "inherit" }}
-          >
+        <a
+          href="#projects"
+          style={{ textDecoration: "none", color: "inherit" }}
+        >
+          <button id="view_work_btn">
             View My Work
-          </a>
-          <span id="workbtn_logo">
-            &nbsp;&nbsp;
-            <AiOutlineArrowRight />
-          </span>
-        </button>
+            <p id="workbtn_logo">
+              &nbsp;&nbsp;
+              <AiOutlineArrowRight />
+            </p>
+          </button>
+        </a>
       </div>
 
       <Particles

@@ -7,7 +7,6 @@ body {
   }
   #particles-js {
     background: radial-gradient(circle, $primary-color 0%, $primary-color);
-    // background: radial-gradient($primary-color 0%, $primary-color);
     height: 100vh;
   }
   #welcome {
@@ -57,15 +56,17 @@ body {
     #view_work_btn {
       @include button();
       padding: 12pt 10pt;
+      display: inline;
       color: white;
       font-weight: medium;
+      text-transform: capitalize;
+
       #workbtn_logo {
         padding-top: 13vw;
+        display: inline;
         &:hover {
-          // #workbtn_logo {
           transition: 0.7s;
           transform: rotate(180deg);
-          // }
         }
       }
     }

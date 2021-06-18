@@ -3,7 +3,7 @@ import "../../styles/about.scss";
 import { AiOutlineBulb } from "react-icons/ai";
 import { BiRocket } from "react-icons/bi";
 import { FaLaptopCode } from "react-icons/fa";
-import { SiDynatrace } from "react-icons/si";
+import { BiAccessibility } from "react-icons/bi";
 import Designs from "./Designs";
 import Introduction from "./Introduction";
 import Skills from "./Skills";
@@ -42,7 +42,7 @@ export default function About() {
           description={
             "Websites don't have to be static, I love making pages come to life."
           }
-          VscRocket={SiDynatrace}
+          VscRocket={BiAccessibility}
         />
       </div>
       <div id="profile_section">

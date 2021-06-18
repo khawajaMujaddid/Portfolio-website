@@ -29,13 +29,8 @@ export default function ContactForm() {
       });
   };
   return (
-    <div
-      style={{ zIndex: "100" }}
-      data-aos="fade-up"
-      data-aos-offset="10"
-      data-aos-duration="1700"
-    >
-      <form onSubmit={handleSubmit}>
+    <div style={{ zIndex: "100" }} data-aos="fade-up" data-aos-duration="1000">
+      <form onSubmit={handleSubmit} autoComplete="off">
         <input
           id="input_field"
           type="text"
@@ -43,6 +38,8 @@ export default function ContactForm() {
           onChange={(e) => setData({ ...formData, name: e.target.value })}
           required
           placeholder="Name (1-12 char)"
+          autocomplete="false"
+          name="hidden"
         />
 
         <br />

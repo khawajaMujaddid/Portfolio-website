@@ -2,12 +2,11 @@
 @import "./about.scss";
 
 #contact_container {
-  margin: -95px 0 6vh 0;
-  clip-path: polygon(0 100%, 0 29%, 49% 14%, 100% 30%, 100% 100%);
+  margin: 0px 0 6vh 0;
+  clip-path: polygon(0 0, 51% 13%, 100% 0, 100% 100%, 0 100%, 0 49%);
   background-color: rgb(37, 41, 52);
   height: 800px;
-  padding: 7vh 0;
-  z-index: -1;
+  padding: 6vh 0;
   // position: absolute;
   #heading_container {
     margin-top: 27vh;
@@ -39,7 +38,7 @@
     }
   }
   #form-container {
-    margin: 10pt 20pt;
+    margin: 35pt 20pt 10pt 20pt;
     display: grid;
     place-items: center;
 
@@ -50,10 +49,16 @@
       font-size: 9pt;
       margin-top: 2vh;
       width: 460px;
-      color: white;
+      color: $primary-2-color;
+      caret-color: $primary-2-color;
       border: none;
       background-color: rgb(30, 36, 44);
+      transition: 0.4s;
+      &:focus {
+        outline: 1px solid $primary-2-color;
+      }
     }
+
     #message {
       @extend #input_field;
       height: 16vh;
