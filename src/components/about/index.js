@@ -1,9 +1,8 @@
 import React from "react";
 import "../../styles/about.scss";
 import { AiOutlineBulb } from "react-icons/ai";
-import { BiRocket } from "react-icons/bi";
 import { FaLaptopCode } from "react-icons/fa";
-import { BiAccessibility } from "react-icons/bi";
+import { BiAccessibility, BiRocket } from "react-icons/bi";
 import Designs from "./Designs";
 import Introduction from "./Introduction";
 import Skills from "./Skills";

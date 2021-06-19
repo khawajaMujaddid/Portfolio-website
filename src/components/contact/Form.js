@@ -38,7 +38,6 @@ export default function ContactForm() {
           onChange={(e) => setData({ ...formData, name: e.target.value })}
           required
           placeholder="Name (1-12 char)"
-          autocomplete="false"
           name="hidden"
         />
 

@@ -2,27 +2,24 @@
 
 body {
   overflow-x: hidden;
-  img {
-    width: 500px;
-  }
+
   #particles-js {
     background: radial-gradient(circle, $primary-color 0%, $primary-color);
-    height: 100vh;
+    height: 183vh;
   }
   #welcome {
+    padding-top: 25vh;
     position: absolute;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 100vw;
-    height: 100vh;
     font-family: $primary-font;
     letter-spacing: 0.01cm;
     font-size: 3vw;
     font-weight: bolder;
     color: white;
+    #top-content {
+      display: grid;
+      place-items: center;
+    }
     .scale_in_center {
       -webkit-animation: scale_in_center 1.5s
         cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
@@ -75,6 +72,101 @@ body {
       #view_work_btn {
         padding: 1.7vh 3.5vw;
       }
+    }
+    #secondary-section {
+      background-color: rgb(47, 52, 61);
+      margin: 150px 10% 150px 9%;
+      padding: 2vw 5vw;
+      display: grid;
+      border-radius: 30px;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      column-gap: 2rem;
+      row-gap: 2rem;
+      #lottie-paragraph {
+        line-height: 1.3rem;
+        #lottie-paragraph-heading {
+          text-align: center;
+          font-size: 5vh;
+          color: $primary-2-color;
+          #lottie-paragraph-text {
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+            row-gap: 7vh;
+            #certification {
+              display: flex;
+
+              #certification-text {
+                font-size: 2.3vh;
+                font-weight: 200;
+                padding-left: 3vw;
+                text-align: left;
+                color: white;
+              }
+              #icon {
+                font-size: 10vh;
+                color: $secondary-font;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 470px) {
+      #secondary-section {
+        display: none;
+      }
+    }
+    @media (max-width: 560px) {
+      #secondary-section {
+        margin: 150px 10% 150px 6%;
+      }
+      #secondary-section > #lottie-paragraph #lottie-paragraph-heading {
+        font-size: 3.5vh;
+      }
+      #secondary-section > #lottie-paragraph #lottie-paragraph-text {
+        font-size: 6vh;
+      }
+      #secondary-section
+        > #lottie-paragraph
+        #lottie-paragraph-text
+        #certification
+        #certification-text {
+        font-size: 1vh;
+      }
+    }
+
+    @media (max-width: 760px) {
+      #secondary-section > #lottie-paragraph #lottie-paragraph-heading {
+        font-size: 4vh;
+      }
+      #secondary-section > #lottie-paragraph #lottie-paragraph-text {
+        font-size: 8vh;
+      }
+      #secondary-section
+        > #lottie-paragraph
+        #lottie-paragraph-text
+        #certification
+        #certification-text {
+        font-size: 1.4vh;
+      }
+    }
+  }
+  @media (max-width: 1017px) and (min-width: 471px) {
+    #particles-js {
+      height: 220vh;
+    }
+  }
+  @media (max-width: 470px) {
+    #particles-js {
+      height: 100vh;
+    }
+    #welcome {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
     }
   }
 }

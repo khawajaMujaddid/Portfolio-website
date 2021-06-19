@@ -9,7 +9,8 @@ export default function Introduction() {
         <p id="who-this-description">
           I'm a MERN Stack Developer and Junior Data Scientist. I have serious
           passion for UI effects, animations and creating intuitive, dynamic
-          user experiences. <br />
+          user experiences. Moreover, can create intelligent models end to end
+          using Artificial Intelligence <br />
           <span style={{ justifyContent: "center" }}>
             <a
               href="#contact"
