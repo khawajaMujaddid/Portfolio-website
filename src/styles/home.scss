@@ -76,12 +76,15 @@ body {
     #secondary-section {
       background-color: rgb(47, 52, 61);
       margin: 150px 10% 150px 9%;
-      padding: 2vw 5vw;
+      padding: 2vw 5vw 20px 5vw;
       display: grid;
       border-radius: 30px;
       grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-      column-gap: 2rem;
+      column-gap: 80px;
       row-gap: 2rem;
+      #lottie-animation {
+        margin-top: -60px;
+      }
       #lottie-paragraph {
         line-height: 1.3rem;
         #lottie-paragraph-heading {
@@ -92,10 +95,9 @@ body {
             display: flex;
             flex-direction: column;
             margin-top: 40px;
-            row-gap: 7vh;
+            row-gap: 50px;
             #certification {
               display: flex;
-
               #certification-text {
                 font-size: 2.3vh;
                 font-weight: 200;
@@ -104,7 +106,7 @@ body {
                 color: white;
               }
               #icon {
-                font-size: 10vh;
+                font-size: 9vh;
                 color: $secondary-font;
               }
             }
@@ -112,7 +114,7 @@ body {
         }
       }
     }
-    @media (max-width: 470px) {
+    @media (max-width: 530px) {
       #secondary-section {
         display: none;
       }
@@ -127,6 +129,11 @@ body {
       #secondary-section > #lottie-paragraph #lottie-paragraph-text {
         font-size: 6vh;
       }
+
+      #secondary-section > #lottie-animation {
+        padding: 0 -40px;
+      }
+
       #secondary-section
         > #lottie-paragraph
         #lottie-paragraph-text
@@ -152,12 +159,15 @@ body {
       }
     }
   }
-  @media (max-width: 1017px) and (min-width: 471px) {
+  @media (max-width: 1098px) and (min-width: 530px) {
     #particles-js {
-      height: 220vh;
+      height: 223vh;
+    }
+    #welcome > #secondary-section {
+      padding-bottom: 50px;
     }
   }
-  @media (max-width: 470px) {
+  @media (max-width: 530px) {
     #particles-js {
       height: 100vh;
     }

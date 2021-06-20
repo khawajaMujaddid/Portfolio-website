@@ -25,6 +25,17 @@ const TypingStyle = {
   color: "white",
 };
 
+function debounce(fn, ms) {
+  let timer;
+  return (_) => {
+    clearTimeout(timer);
+    timer = setTimeout((_) => {
+      timer = null;
+      fn.apply(this, arguments);
+    }, ms);
+  };
+}
+
 export default function Home() {
   return (
     <div>
@@ -116,10 +127,34 @@ export default function Home() {
 }
 
 function Certifications() {
+  const [dimensions, setDimensions] = React.useState({
+    height: window.innerHeight,
+    width: window.innerWidth,
+  });
+  React.useEffect(() => {
+    const debouncedHandleResize = debounce(function handleResize() {
+      setDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth,
+      });
+    }, 1000);
+
+    window.addEventListener("resize", debouncedHandleResize);
+    return (_) => {
+      window.removeEventListener("resize", debouncedHandleResize);
+    };
+  });
+
   return (
     <div id="secondary-section" data-aos="fade-up">
       <div id="lottie-animation" data-aos="zoom-out">
-        <Lottie options={defaultOptions} height={400} width={350} />
+        <Lottie
+          options={defaultOptions}
+          height={470}
+          width={
+            dimensions.width >= 1099 || dimensions.width <= 650 ? 400 : 500
+          }
+        />
       </div>
       <div id="lottie-paragraph">
         <div id="lottie-paragraph-heading">

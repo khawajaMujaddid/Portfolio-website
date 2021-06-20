@@ -9,24 +9,35 @@ import Footer from "./components/footer";
 import Projects from "./components/projects";
 import Aos from "aos";
 
+function debounce(fn, ms) {
+  let timer;
+  return (_) => {
+    clearTimeout(timer);
+    timer = setTimeout((_) => {
+      timer = null;
+      fn.apply(this, arguments);
+    }, ms);
+  };
+}
+
 function App() {
-  const [mobileCheckMark, setMobileCheckMark] = React.useState(false);
-
-  //event listner for window resizing
+  const [dimensions, setDimensions] = React.useState({
+    height: window.innerHeight,
+    width: window.innerWidth,
+  });
   React.useEffect(() => {
-    window.addEventListener(
-      "resize",
-      function (_) {
-        if (window.innerWidth <= 730) {
-          setMobileCheckMark(true);
-        } else {
-          setMobileCheckMark(false);
-        }
-      },
-      true
-    );
-  }, []);
+    const debouncedHandleResize = debounce(function handleResize() {
+      setDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth,
+      });
+    }, 1000);
 
+    window.addEventListener("resize", debouncedHandleResize);
+    return (_) => {
+      window.removeEventListener("resize", debouncedHandleResize);
+    };
+  });
   React.useEffect(() => {
     Aos.init({
       // Global settings:
@@ -39,8 +50,8 @@ function App() {
   return (
     <div className="App">
       <span id="home">
-        {mobileCheckMark === false ? <Home /> : <NavBar />}
-        {mobileCheckMark === false ? <NavBar /> : <Home />}
+        {dimensions.width > 730 ? <Home /> : <NavBar />}
+        {dimensions.width > 730 ? <NavBar /> : <Home />}
       </span>
       <span id="about">
         <About />
