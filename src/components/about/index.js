@@ -51,13 +51,13 @@ export default function About() {
           <Skills skill={"HTML"} width={90} />
           <Skills skill={"Javascript"} width={80} />
           <Skills skill={"MERN"} width={90} />
-          <Skills skill={"Scikit-Learn"} width={80} />
+          <Skills skill={"ScikitLearn"} width={80} />
           <Skills skill={"Tensorflow"} width={70} />
           <Skills skill={"Keras"} width={65} />
           <Skills skill={"Redux"} width={80} />
           <Skills skill={"UI Tools"} width={50} />
-          <Skills skill={"NextJS"} width={60} />
-          <Skills skill={"Firebase"} width={70} />
+          <Skills skill={"NextJS"} width={70} />
+          <Skills skill={"Firebase"} width={75} />
           <Skills skill={"GraphQL"} width={60} />
           <Skills skill={"PassportJS"} width={65} />
         </span>

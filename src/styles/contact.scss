@@ -7,7 +7,6 @@
   background-color: rgb(37, 41, 52);
   height: 800px;
   padding: 6vh 0;
-  // position: absolute;
   #heading_container {
     margin-top: 27vh;
     display: grid;
@@ -38,14 +37,14 @@
     }
   }
   #form-container {
-    margin: 35pt 20pt 10pt 20pt;
+    margin-block: 35pt 10pt;
     display: grid;
     place-items: center;
 
     #input_field {
       outline: none;
       padding-left: 1.5vw;
-      height: 6vh;
+      height: 7vh;
       font-size: 9pt;
       margin-top: 2vh;
       width: 460px;

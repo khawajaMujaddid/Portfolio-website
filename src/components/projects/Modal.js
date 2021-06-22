@@ -17,7 +17,7 @@ const Modal = ({
 
   return (
     <motion.div className="backdrop" id="backdrop" onClick={handleClick}>
-      <div></div>
+      <div className="backdrop"></div>
       <motion.img
         src={selectedImg}
         alt="enlarged pic"
@@ -45,7 +45,7 @@ const Modal = ({
           ""
         )}
       </motion.div>
-      <div></div>
+      <div className="backdrop"></div>
     </motion.div>
   );
 };

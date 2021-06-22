@@ -22,17 +22,15 @@
     @media (max-width: 776px) {
       row-gap: 3em;
     }
+    @media (max-width: 450px) {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 330px));
+    }
   }
   #img-wrap {
     overflow: hidden;
     opacity: 1;
     position: relative;
   }
-  // @media (max-width: 1364px) {
-  //   #img-wrap {
-  //     margin-top: 6vh;
-  //   }
-  // }
 
   #img-wrap img {
     width: 60vh;
@@ -48,7 +46,7 @@
 
   #overlay {
     position: absolute;
-    z-index: 100;
+    z-index: 5;
     bottom: 100%;
     left: 0;
     right: 0;
@@ -99,17 +97,6 @@
       transition: 0.3s;
     }
   }
-  // @media (max-width: 400px) {
-  //   #img-wrap img {
-  //     width: 45.5vh;
-  //     height: 37vh;
-  //   }
-  // }
-  // @media (max-width: 365px) {
-  //   #img-wrap img {
-  //     width: 41vh;
-  //   }
-  // }
 
   #backdrop {
     position: fixed;
@@ -156,45 +143,4 @@
       }
     }
   }
-  // @media (max-width: 1125px) {
-  //   #backdrop img {
-  //     height: 50vh;
-  //     margin: 15vh auto;
-  //     margin-bottom: 0;
-  //   }
-  // }
-  // @media (max-width: 750px) {
-  //   #backdrop img {
-  //     height: 39vh;
-  //     margin: 22vh auto;
-  //     margin-bottom: 0;
-  //   }
-  // }
-  // @media (max-width: 600px) {
-  //   #backdrop img {
-  //     height: 45vh;
-  //     margin: 17vh auto;
-  //     margin-bottom: 0;
-  //   }
-  // }
-  // @media (max-width: 450px) {
-  //   #backdrop img {
-  //     height: 40vh;
-  //     margin-bottom: 0;
-  //   }
-  // }
-  // @media (max-width: 390px) {
-  //   #backdrop img {
-  //     height: 33vh;
-  //     margin: 23vh auto;
-  //     margin-bottom: 0;
-  //   }
-  // }
-  // @media (max-width: 350px) {
-  //   #backdrop img {
-  //     height: 35vh;
-  //     margin: 23vh auto;
-  //     margin-bottom: 0;
-  //   }
-  // }
 }
