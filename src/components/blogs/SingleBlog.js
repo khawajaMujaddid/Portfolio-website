@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SingleBlog({ title, date, description, image, link }) {
   return (
-    <div style={{ marginTop: "10vh" }}>
+    <div style={{ margin: "10vh 1.3em 0 1.3em", flex: "0 1 350px" }}>
       <div id="blog-image" data-aos="zoom-in">
         <img src={image} alt="blog-pic" id="blog-image" />
       </div>

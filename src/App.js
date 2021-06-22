@@ -49,10 +49,10 @@ function App() {
 
   return (
     <div className="App">
-      <span id="home">
+      <div id="home">
         {dimensions.width > 730 ? <Home /> : <NavBar />}
         {dimensions.width > 730 ? <NavBar /> : <Home />}
-      </span>
+      </div>
       <span id="about">
         <About />
       </span>

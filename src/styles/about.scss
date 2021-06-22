@@ -22,55 +22,52 @@
   }
 
   #design_container {
-    @include about-grids(1vh 14vw 0 15vw, 6%, 50px, 180px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 8rem;
     #design-polygon {
-      height: 101px;
-      // width: clamp(120px, 120px, 120px);
-      min-width: 120px;
-      max-width: 120px;
-      width: 120px;
       background-color: $primary-2-color;
       clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+      display: flex;
+      justify-content: center;
+      height: 50%;
+      align-items: center;
       #design-logo {
         color: #fff;
         font-size: 42pt;
-        margin: 0px 10px 0px 30px;
-        padding-top: 18px;
-      }
-    }
-    @media (max-width: 1500px) and (min-width: 400px) {
-      #design-polygon {
-        margin-left: 1vh;
+        width: 50%;
       }
     }
 
     #design-content {
-      margin: 2vh 0px 0px 25px;
+      line-height: 3em;
       #design-title {
         color: #616161;
         font-size: 16pt;
+        text-align: center;
         font-weight: bolder;
         font-family: $primary-font-bold;
       }
       #design-description {
-        padding: 0.5vh 0 0 0;
         color: #616161;
-        line-height: 12pt;
+        text-align: center;
+        line-height: 12pt !important;
         font-family: $primary-font;
         font-size: 11pt;
         font-weight: 500;
       }
     }
   }
-  @media (max-width: 1260px) and (min-width: 889px) {
-    #design_container > *:last-child {
-      margin-left: 24vw;
-      width: 170px;
-      margin-top: 3vh;
-    }
-  }
+  // @media (max-width: 1260px) and (min-width: 889px) {
+  //   #design_container > *:last-child {
+  //     margin-left: 24vw;
+  //     width: 170px;
+  //     margin-top: 3vh;
+  //   }
+  // }
   #profile_section {
-    @include about-grids(16vh 16vw 0 12vw, 6%, 180px, 400px);
+    @include about-grids(16vh 13vw 0 9vw, 6%, 180px, 400px);
     #profile-container {
       #profile-image {
         margin: 0 1vw 0 3vw;
@@ -106,38 +103,38 @@
           text-align: justify;
         }
       }
-      @media (max-width: 550px) {
-        #profile-image {
-          height: 240px;
-        }
-        #who-this {
-          font-size: 11.5pt;
-        }
-        #who-this-description {
-          font-size: 10.5pt;
-        }
-      }
-      @media (max-width: 470px) {
-        #profile-image {
-          height: 27vh;
-        }
-      }
-      @media (max-width: 510px) {
-        #profile-image {
-          margin-left: 3vh;
-        }
-      }
-      @media (max-width: 400px) {
-        #profile-image {
-          margin-left: 4vh;
-        }
-      }
+      // @media (max-width: 550px) {
+      //   #profile-image {
+      //     height: 240px;
+      //   }
+      //   #who-this {
+      //     font-size: 11.5pt;
+      //   }
+      //   #who-this-description {
+      //     font-size: 10.5pt;
+      //   }
+      // }
+      // @media (max-width: 470px) {
+      //   #profile-image {
+      //     height: 27vh;
+      //   }
+      // }
+      // @media (max-width: 510px) {
+      //   #profile-image {
+      //     margin-left: 3vh;
+      //   }
+      // }
+      // @media (max-width: 400px) {
+      //   #profile-image {
+      //     margin-left: 4vh;
+      //   }
+      // }
     }
 
     #skills-section {
       display: flex;
       height: 480px;
-      // width: clamp(100%, 120%, 120%);
+
       width: 120%;
       min-width: 100%;
       max-width: 120%;
@@ -188,39 +185,6 @@
     @media (max-width: 900px) {
       #skills-section {
         margin-left: -4.5vw;
-      }
-    }
-  }
-
-  @media (max-width: 570px) {
-    #design_container {
-      margin: 0 20px;
-      grid-gap: 10%;
-      justify-content: center;
-      grid-template-columns: repeat(auto-fill, minmax(20px, 150px));
-      #design-content {
-        #design-title {
-          font-size: 14pt;
-        }
-        #design-description {
-          font-size: 10pt;
-        }
-      }
-    }
-  }
-  @media (max-width: 399px) {
-    #design_container {
-      margin: 0 5px;
-      grid-gap: 9%;
-      justify-content: center;
-      grid-template-columns: repeat(auto-fill, minmax(20px, 120px));
-      #design-content {
-        #design-title {
-          font-size: 13pt;
-        }
-        #design-description {
-          font-size: 10pt;
-        }
       }
     }
   }

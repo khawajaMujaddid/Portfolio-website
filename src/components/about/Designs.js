@@ -3,7 +3,7 @@ import "../../styles/about.scss";
 
 export default function Designs({ title, description, VscRocket }) {
   return (
-    <div>
+    <div style={{ flex: "0 1 120px", height: "auto", padding: "0 0 2em 0" }}>
       <div id="design-polygon">
         <div id="design-logo">
           <VscRocket />

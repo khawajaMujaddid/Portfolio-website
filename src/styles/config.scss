@@ -30,3 +30,9 @@ $primary-2-color: rgb(4, 194, 201);
   grid-template-columns: repeat(auto-fill, minmax($base, $max-size));
   @content;
 }
+
+@mixin modal-design() {
+  width: 85%;
+  margin: 0 auto;
+  @content;
+}

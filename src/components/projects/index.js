@@ -25,6 +25,7 @@ export default function Projects() {
           setSelectedImg={setSelectedImg}
           setSelectedImgData={setSelectedImgData}
         />
+
         {selectedImg && (
           <Modal
             selectedImg={selectedImg}

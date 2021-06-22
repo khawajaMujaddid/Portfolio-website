@@ -3,7 +3,7 @@
 
 #blogs-container {
   @extend #about_container;
-  padding: 0vh 0 7vh 0;
+  padding: 0 0 7vh 0;
 
   #heading_container {
     @extend #main_heading_container;
@@ -15,28 +15,20 @@
     }
   }
   #blogs-section {
-    @include about-grids(-5vh 7vw 0 10vw, 3%, 90px, 330px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     row-gap: 2rem;
-    line-height: 1.5rem;
+    line-height: 1.4rem;
+    margin: 0 5rem;
     #blog-image {
-      width: 50vh;
-    }
-    @media (max-width: 400px) {
-      #blog-image {
-        width: 45.5vh;
-      }
-    }
-    @media (max-width: 365px) {
-      #blog-image {
-        width: 41vh;
-      }
+      width: 350px;
     }
     #blog-title {
       padding-top: 2vh;
       font-family: $primary-font-bold;
       font-size: 15pt;
       color: #616161;
-
       transition: 0.2s;
       &:hover {
         color: $primary-2-color;
@@ -58,16 +50,11 @@
     }
     #blog-description {
       padding-top: 2vh;
+
       font-weight: medium;
       font-size: 11pt;
       text-align: justify;
       font-family: $primary-font;
-    }
-  }
-  @media (min-width: 1290px) {
-    #blogs-section > *:last-child {
-      margin-left: 380px;
-      width: 320px;
     }
   }
 }
