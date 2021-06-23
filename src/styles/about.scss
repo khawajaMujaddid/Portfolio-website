@@ -41,7 +41,8 @@
         );
         display: flex;
         justify-content: center;
-        height: 50%;
+        height: 55%;
+        max-width:100%;
         align-items: center;
         #design-logo {
           padding-top: 0.2em;
@@ -55,36 +56,47 @@
         line-height: 3em;
         #design-title {
           color: #616161;
-          font-size: 16pt;
+          font-size: 1.1em;
           text-align: center;
           font-weight: bolder;
           font-family: $primary-font-bold;
         }
         #design-description {
+         
           color: #616161;
           text-align: center;
           line-height: 12pt !important;
           font-family: $primary-font;
-          font-size: 11pt;
+          font-size: .9em;
           font-weight: 500;
+          width: 110%;
+          margin-left: -7px;
         }
       }
-      @media (max-width: 448px) {
-        margin: 2rem 1.5em;
+      @media (max-width: 468px) {
+        margin: 2rem 1em;
       }
     }
   }
 
   #profile_section {
-    margin: 8em 5em 5em 5em;
+    margin: 8em 2em 5em 2em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 420px));
     justify-content: center;
     grid-gap: 150px;
-    @media (max-width: 500px) {
-      grid-template-columns: repeat(auto-fit, minmax(70%, 85%));
+    @media (max-width: 490px) {
+      grid-template-columns: repeat(auto-fit, minmax(80%, 95%));
       #profile-container > #profile-image {
         height: 40vh !important;
+      }
+       #skills-section {
+        width: 100%;
+        justify-self: center;
+        @media (max-width:400px) {
+          width: 120% !important;
+          
+        }
       }
     }
 
@@ -120,6 +132,7 @@
           padding: 15px 0;
           font-family: $primary-font;
           text-align: justify;
+          font-size: .9em !important;
         }
       }
     }

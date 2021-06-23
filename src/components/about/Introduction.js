@@ -7,7 +7,7 @@ export default function Introduction() {
       <div id="profile-introduction">
         <h5 id="who-this">Who's this guy</h5>
         <p id="who-this-description">
-          I'm a MERN Stack Developer and Junior Data Scientist. I have serious
+          I'm a <b>MERN Stack Developer</b> and <b>Junior Data Scientist</b>. I have serious
           passion for UI effects, animations and creating intuitive, dynamic
           user experiences. Moreover, can create intelligent models end to end
           using Artificial Intelligence <br />

@@ -20,7 +20,7 @@ import ReactTypingEffect from "react-typing-effect";
 
 const TypingStyle = {
   letterSpacing: "0.03cm",
-  fontSize: "5vw",
+  fontSize: "6vw",
   fontWeight: "bolder",
   color: "white",
 };

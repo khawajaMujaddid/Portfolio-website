@@ -2,7 +2,7 @@ import React from "react";
 import "../../styles/contact.scss";
 import ContactForm from "./Form";
 
-import { MdArrowUpward } from "react-icons/md";
+import { BsBoxArrowInUp } from "react-icons/bs";
 
 export default function ContactUS() {
   return (
@@ -31,7 +31,7 @@ export default function ContactUS() {
         }}
       >
         <a href="#home" style={upArrow} id="topArrow">
-          <MdArrowUpward />
+          <BsBoxArrowInUp />
         </a>
       </div>
     </>
