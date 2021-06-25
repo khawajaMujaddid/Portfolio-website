@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaShareSquare } from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai";
 
 const Modal = ({
   setSelectedImg,
@@ -31,19 +32,34 @@ const Modal = ({
         animate={{ opacity: 1 }}
       >
         <p id="selected-image-des">{selectedImgData.description}</p>
-        {selectedImgData.deployed ? (
+        <div
+          style={{
+            display: "flex",
+          }}
+        >
+          {selectedImgData.deployed ? (
+            <button id="site-link">
+              <a
+                href={selectedImgData.deployed}
+                target="blank"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <FaShareSquare /> &nbsp;Visit Site
+              </a>
+            </button>
+          ) : (
+            ""
+          )}
           <button id="site-link">
             <a
-              href={selectedImgData.deployed}
+              href={selectedImgData.github}
               target="blank"
               style={{ textDecoration: "none", color: "inherit" }}
             >
-              <FaShareSquare /> &nbsp;Visit Site
+              <AiFillGithub /> &nbsp;Github
             </a>
           </button>
-        ) : (
-          ""
-        )}
+        </div>
       </motion.div>
       <div className="backdrop"></div>
     </motion.div>

@@ -31,6 +31,7 @@ export default function ImageGrid({ setSelectedImg, setSelectedImgData }) {
                   setSelectedImgData({
                     description: doc.description,
                     deployed: doc.deployed,
+                    github: doc.github,
                   });
                 }}
               >
