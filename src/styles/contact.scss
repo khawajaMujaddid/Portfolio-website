@@ -43,9 +43,10 @@
 
     #input_field {
       outline: none;
-      padding-left: 1.5vw;
+      padding-left: 1.5em;
       height: 6vh;
       font-size: 9pt;
+      font-style: $primary-font;
       margin-top: 2vh;
       width: 460px;
       color: $primary-2-color;
@@ -62,6 +63,7 @@
       @extend #input_field;
       height: 16vh;
       padding-top: 2vh;
+      resize: none;
     }
     #form_submit_btn {
       margin-top: 1.5vh;
@@ -70,7 +72,7 @@
       border: 1px solid rgb(255, 255, 255);
       color: white;
       text-transform: uppercase;
-      padding: 1vw;
+      padding: 1em;
     }
     @media (max-width: 600px) {
       #input_field {
