@@ -25,33 +25,46 @@ function App() {
     height: window.innerHeight,
     width: window.innerWidth,
   });
+  const [scrolled, setScrolled] = React.useState(false);
+
   React.useEffect(() => {
+    Aos.init({
+      offset: 200, // offset (in px) from the original trigger point
+      duration: 1000, // values from 0 to 3000, with step 50m
+    });
+    // screen width eventlistner
     const debouncedHandleResize = debounce(function handleResize() {
       setDimensions({
         height: window.innerHeight,
         width: window.innerWidth,
       });
-    }, 1000);
+    }, 0);
 
     window.addEventListener("resize", debouncedHandleResize);
+
+    //window scroll eventlisner
+    const changeHeaderPosition = () => {
+      if (window.scrollY >= 580) setScrolled(true);
+      else setScrolled(false);
+    };
+    //attaching event listner for scroll value
+    window.addEventListener("scroll", changeHeaderPosition);
     return (_) => {
       window.removeEventListener("resize", debouncedHandleResize);
+      window.removeEventListener("scroll", changeHeaderPosition);
     };
-  });
-  React.useEffect(() => {
-    Aos.init({
-      // Global settings:
-      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-      offset: 200, // offset (in px) from the original trigger point
-      duration: 1000, // values from 0 to 3000, with step 50m
-    });
   });
 
   return (
     <div className="App">
       <div id="home">
-        {dimensions.width > 730 ? <Home /> : <NavBar />}
+        {/* {dimensions.width > 730 ? <Home /> : <NavBar />}
         {dimensions.width > 730 ? <NavBar /> : <Home />}
+         */}
+        {dimensions.width < 730 && <NavBar />}
+        {dimensions.width > 730 && scrolled && <NavBar />}
+
+        <Home />
       </div>
       <span id="about">
         <About />

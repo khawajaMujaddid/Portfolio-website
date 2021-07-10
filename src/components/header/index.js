@@ -7,9 +7,25 @@ import { RiPassportFill } from "react-icons/ri";
 const NavBar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
+  const [scrolled, setScrolled] = useState(false);
   const closeMobileMenu = () => setClick(false);
+
+  React.useEffect(() => {
+    //changing haeder to sticky on scroll
+    const changeHeaderPosition = () => {
+      if (window.scrollY >= 580) {
+        setScrolled(true);
+      } else setScrolled(false);
+    };
+    //attaching event listner for scroll value
+    window.addEventListener("scroll", changeHeaderPosition);
+    return (_) => {
+      window.removeEventListener("scroll", changeHeaderPosition);
+    };
+  });
+
   return (
-    <div className="header">
+    <div className={scrolled ? "sticky_header" : "header"}>
       <div className="logo-nav">
         <div className="logo-container">
           <RiPassportFill className="logo" />
@@ -23,6 +39,7 @@ const NavBar = () => {
               HOME
             </a>
           </li>
+
           <li className="option" onClick={closeMobileMenu}>
             <a
               href="#about"
