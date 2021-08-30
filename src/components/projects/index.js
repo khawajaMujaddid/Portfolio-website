@@ -13,13 +13,13 @@ export default function Projects() {
   return (
     <div style={{ marginTop: "15vh" }}>
       <div id="projects-container">
-        <div
-          id="heading_container"
-          data-aos="fade-right"
-          data-aos-duration="2000"
-        >
-          <h2 id="heading">Projects</h2>
-          <h2 id="heading_bar">{}</h2>
+        <div id="heading_container">
+          <h2 id="heading" data-aos="fade-right" data-aos-duration="1000">
+            Projects
+          </h2>
+          <h2 id="heading_bar" data-aos="zoom-out" data-aos-duration="2000">
+            {}
+          </h2>
         </div>
         <ImageGrid
           setSelectedImg={setSelectedImg}

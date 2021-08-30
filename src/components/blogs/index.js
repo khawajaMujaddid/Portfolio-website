@@ -9,13 +9,13 @@ import csr from "../../assets/csr-ssr-blog.jpg";
 export default function Blogs() {
   return (
     <div id="blogs-container">
-      <div
-        id="heading_container"
-        data-aos="fade-right"
-        data-aos-duration="2000"
-      >
-        <h2 id="heading">Blogs</h2>
-        <h2 id="heading_bar">{}</h2>
+      <div id="heading_container">
+        <h2 id="heading" data-aos="fade-right" data-aos-duration="1000">
+          Blogs
+        </h2>
+        <h2 id="heading_bar" data-aos="zoom-out" data-aos-duration="2000">
+          {}
+        </h2>
       </div>
       <div id="blogs-section">
         <SingleBlog
@@ -27,17 +27,6 @@ export default function Blogs() {
           image={redux}
           link={
             "https://ibad23ahmad.medium.com/why-one-should-use-redux-e1057c24e6ab"
-          }
-        />
-        <SingleBlog
-          title={"CSR VS SSR for Development"}
-          description={
-            "Client-side rendering manages the routing dynamically without refreshing the page every time a user request. But server-side rendering is able to display a fully populated page on the first load for any route of the website, whereas client-side rendering displays a blank page first."
-          }
-          date={"June 6, 2021"}
-          image={csr}
-          link={
-            "https://ibad23ahmad.medium.com/client-side-rendering-csr-vs-server-side-rendering-ssr-b98c032005c0"
           }
         />
         <SingleBlog
@@ -60,6 +49,18 @@ export default function Blogs() {
           image={react}
           link={
             "https://ibad23ahmad.medium.com/getting-started-with-react-js-db3bf6134f14"
+          }
+        />
+
+        <SingleBlog
+          title={"CSR VS SSR for Development"}
+          description={
+            "Client-side rendering manages the routing dynamically without refreshing the page every time a user request. But server-side rendering is able to display a fully populated page on the first load for any route of the website, whereas client-side rendering displays a blank page first."
+          }
+          date={"June 6, 2021"}
+          image={csr}
+          link={
+            "https://ibad23ahmad.medium.com/client-side-rendering-csr-vs-server-side-rendering-ssr-b98c032005c0"
           }
         />
       </div>

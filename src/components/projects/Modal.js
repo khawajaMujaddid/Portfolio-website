@@ -35,6 +35,7 @@ const Modal = ({
         <div
           style={{
             display: "flex",
+            justifyContent: "center",
           }}
         >
           {selectedImgData.deployed ? (

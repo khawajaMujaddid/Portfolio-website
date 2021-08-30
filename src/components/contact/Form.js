@@ -26,6 +26,7 @@ export default function ContactForm() {
       })
       .catch((error) => {
         NotificationManager.error("Error message", `${error}`, 5000);
+        console.log(error);
       });
   };
   return (

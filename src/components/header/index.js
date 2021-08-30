@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "../../styles/header.scss";
 import { AiOutlineMenu, AiOutlineCloseCircle } from "react-icons/ai";
-// import logo from "../../assets/logo.png";
-import { RiPassportFill } from "react-icons/ri";
+import logo from "../../assets/logo.png";
+// import { RiPassportFill } from "react-icons/ri";
 
-const NavBar = () => {
+const NavBar = ({ width }) => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const [scrolled, setScrolled] = useState(false);
@@ -13,10 +13,11 @@ const NavBar = () => {
   React.useEffect(() => {
     //changing haeder to sticky on scroll
     const changeHeaderPosition = () => {
-      if (window.scrollY >= 580) {
+      if (window.scrollY >= 0) {
         setScrolled(true);
       } else setScrolled(false);
     };
+
     //attaching event listner for scroll value
     window.addEventListener("scroll", changeHeaderPosition);
     return (_) => {
@@ -25,10 +26,14 @@ const NavBar = () => {
   });
 
   return (
-    <div className={scrolled ? "sticky_header" : "header"}>
+    <div
+      className={scrolled && width > 777 ? "sticky_header" : "header"}
+      data-aos={width > 777 && "zoom-in"}
+      data-aos-duration="600"
+    >
       <div className="logo-nav">
         <div className="logo-container">
-          <RiPassportFill className="logo" />
+          <img src={logo} alt="logo" className="logo" />
         </div>
         <ul className={click ? "nav_options active" : "nav_options"}>
           <li className="option" onClick={closeMobileMenu}>
@@ -61,7 +66,7 @@ const NavBar = () => {
               href="#blogs"
               style={{ textDecoration: "none", color: "inherit" }}
             >
-              BLOG
+              BLOGS
             </a>
           </li>
           <li className="option" onClick={closeMobileMenu}>

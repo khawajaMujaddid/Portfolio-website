@@ -44,7 +44,7 @@ function App() {
 
     //window scroll eventlisner
     const changeHeaderPosition = () => {
-      if (window.scrollY >= 580) setScrolled(true);
+      if (window.scrollY >= 450) setScrolled(true);
       else setScrolled(false);
     };
     //attaching event listner for scroll value
@@ -58,11 +58,10 @@ function App() {
   return (
     <div className="App">
       <div id="home">
-        {/* {dimensions.width > 730 ? <Home /> : <NavBar />}
-        {dimensions.width > 730 ? <NavBar /> : <Home />}
-         */}
-        {dimensions.width < 730 && <NavBar />}
-        {dimensions.width > 730 && scrolled && <NavBar />}
+        {dimensions.width < 778 && <NavBar width={window.innerWidth} />}
+        {dimensions.width > 777 && scrolled && (
+          <NavBar width={window.innerWidth} />
+        )}
 
         <Home />
       </div>

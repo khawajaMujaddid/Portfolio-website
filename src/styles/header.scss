@@ -23,19 +23,38 @@
     justify-content: center;
   }
   .logo {
-    width: 40px;
-    height: 40px;
+    width: 3.5em;
+    height: 3em;
   }
   .nav_options {
     padding-left: 55px;
     display: grid;
     grid-template-columns: repeat(5, auto);
-    grid-gap: 50px;
+    grid-gap: 20px;
     list-style-type: none;
     cursor: pointer;
     font-weight: bolder;
     font-size: 1rem;
+
+    .option {
+      padding: 1em 1em;
+      &:hover {
+        border: 1px solid rgb(223, 220, 220);
+        transition: 0.2s;
+        background-color: $primary-2-color;
+        font-weight: 800;
+        border: none !important;
+      }
+    }
+    .option_active {
+      display: none;
+      color: maroon;
+      font-weight: bolder;
+      color: white;
+      border-bottom: 1px solid white;
+    }
   }
+
   .mobile-option {
     display: none;
     transition: 0.2s;
@@ -51,28 +70,27 @@
     display: none;
   }
 
-  @media (max-width: 730px) {
+  @media (max-width: 777px) {
     /*Mobile View */
     .header {
+      overflow-x: hidden;
       padding: 0px 10px;
     }
-    .logo {
-      width: 45px;
-      height: 40px;
-    }
+
     .nav_options {
-      margin: 0;
       display: flex;
-      width: 80%;
+      justify-content: center;
+      margin: 0;
+      width: 22.5em;
+      overflow: hidden;
       height: auto;
       position: absolute;
-      top: 60px;
+      top: 70px;
       left: -100%;
       opacity: 0;
       transition: all 0.5s ease;
       flex-direction: column;
       list-style-type: none;
-      grid-gap: 0px;
     }
 
     .nav_options.active {
@@ -84,17 +102,27 @@
       align-content: center;
       padding-left: 0px;
     }
-    .menu_icon {
-      width: 55px;
-      height: 55px;
+
+    .mobile_menu {
+      padding: 10px 0 0 0;
+      font-size: 35px;
     }
+
     .option {
-      border-bottom: 1px solid white;
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 6vh;
-      padding: 30px 0px;
+      height: 8vh;
+      grid-gap: 40px;
+
+      &:hover {
+        border: 1px solid rgb(223, 220, 220);
+        transition: 0.8s;
+        background-color: white !important;
+        color: $primary-2-color;
+        outline: none;
+        border: none;
+      }
     }
 
     .mobile_menu {
@@ -105,6 +133,6 @@
 .sticky_header {
   @extend .header;
   position: fixed;
-  z-index: 99;
+  z-index: 9;
   width: 100%;
 }

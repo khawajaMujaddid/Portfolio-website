@@ -10,13 +10,13 @@ import Skills from "./Skills";
 export default function About() {
   return (
     <div id="about_container">
-      <div
-        id="main_heading_container"
-        data-aos="fade-right"
-        data-aos-duration="2000"
-      >
-        <h2 id="main_heading">About</h2>
-        <h2 id="main_heading_bar">{}</h2>
+      <div id="main_heading_container">
+        <h2 id="main_heading" data-aos="fade-right" data-aos-duration="1000">
+          About
+        </h2>
+        <h2 id="main_heading_bar" data-aos="zoom-out" data-aos-duration="2000">
+          {}
+        </h2>
       </div>
       <div id="design_container" data-aos="zoom-in">
         <Designs
@@ -57,10 +57,11 @@ export default function About() {
           <Skills skill={"Tensorflow"} width={70} />
           <Skills skill={"Keras"} width={65} />
           <Skills skill={"Redux"} width={80} />
-          <Skills skill={"UI Tools"} width={50} />
+          <Skills skill={"UI Tools"} width={40} />
           <Skills skill={"NextJS"} width={60} />
           <Skills skill={"Firebase"} width={75} />
           <Skills skill={"GraphQL"} width={70} />
+          <Skills skill={"Typescript"} width={50} />
           <Skills skill={"PassportJS"} width={65} />
         </span>
       </div>

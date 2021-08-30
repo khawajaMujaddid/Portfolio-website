@@ -6,7 +6,7 @@ import ReactTypingEffect from "react-typing-effect";
 
 const TypingStyle = {
   letterSpacing: "0.03cm",
-  fontSize: "5.7vw",
+  fontSize: "clamp(2rem, 1rem + 2vw, 7rem)",
   fontWeight: "bolder",
   color: "white",
 };
@@ -16,8 +16,8 @@ export default function Home() {
     <div style={{ position: "relative" }}>
       <div className={styles.scale_in_center} id="welcome">
         <h1 data-aos="zoom-out" data-aos-duration={2000}>
-          Hello , I'm{" "}
-          <span style={{ color: "rgb(227,27,109)" }}>Ibad Ahmad.</span> <br />
+          Hello , I'm <span style={{ color: "rgb(227,27,109)" }}>Ibad.</span>{" "}
+          <br />
           I'm&nbsp;
           <span>
             <ReactTypingEffect
@@ -62,7 +62,7 @@ export default function Home() {
         params={{
           particles: {
             number: {
-              value: 15,
+              value: 25,
               density: {
                 enable: true,
                 value_area: 700,
