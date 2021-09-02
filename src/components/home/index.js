@@ -6,7 +6,7 @@ import ReactTypingEffect from "react-typing-effect";
 
 const TypingStyle = {
   letterSpacing: "0.03cm",
-  fontSize: "clamp(2rem, 1rem + 2vw, 7rem)",
+  fontSize: "clamp(1.8rem, 1rem + 2vw, 7rem)",
   fontWeight: "bolder",
   color: "white",
 };

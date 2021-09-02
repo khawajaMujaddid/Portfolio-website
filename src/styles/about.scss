@@ -85,10 +85,10 @@
     justify-content: center;
     grid-gap: 100px 150px;
 
-    @media (max-width: 490px) {
+    @media (max-width: 450px) {
       grid-template-columns: repeat(auto-fit, minmax(80%, 95%));
       #profile-container > #profile-image {
-        height: 40vh !important;
+        height: 33vh !important;
       }
       #skills-section {
         width: 100%;

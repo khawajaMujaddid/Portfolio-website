@@ -5,7 +5,7 @@ export default function SingleBlog({ title, date, description, image, link }) {
     <div
       style={{ margin: "10vh 1.5em 0 1.5em", flex: "0 1 250px" }}
       id="blogs-inner-section"
-      data-aos="zoom-out"
+      data-aos="zoom-in"
     >
       <div id="blog-image">
         <img src={image} alt="blog-pic" id="blog-image" />
@@ -16,7 +16,7 @@ export default function SingleBlog({ title, date, description, image, link }) {
           target="blank"
           style={{ textDecoration: "none", color: "inherit" }}
         >
-          {title}{" "}
+          {title}
         </a>
       </h3>
       <h6 id="blog-date">{date}</h6>

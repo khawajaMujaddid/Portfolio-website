@@ -20,13 +20,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
     line-height: 1.4rem;
 
     #blogs-inner-section {
-      // padding: 1em;
-      // background-color: rgb(245, 245, 245);
-      // box-shadow: 10px 10px 10px 0px rgba(51, 49, 49, 0.19);
       #blog-image {
         width: 350px;
         height: auto;
@@ -40,7 +36,7 @@
       }
       @media (max-width: 600px) {
         #blog-image {
-          width: 80vw;
+          width: 90vw;
           height: auto;
         }
       }

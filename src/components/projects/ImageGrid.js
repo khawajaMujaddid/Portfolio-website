@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { data } from "./ProjectsData";
 
 export default function ImageGrid({ setSelectedImg, setSelectedImgData }) {
@@ -34,14 +34,17 @@ export default function ImageGrid({ setSelectedImg, setSelectedImgData }) {
           React
         </span>
 
-        <span className="item Node" onClick={() => setSelectedCatgeory("Node")}>
-          Node
+        <span
+          className="item Redux"
+          onClick={() => setSelectedCatgeory("Redux")}
+        >
+          Redux
         </span>
         <span className="item SASS" onClick={() => setSelectedCatgeory("SASS")}>
           SASS
         </span>
       </div>
-      <div id="img-grid">
+      <div id="img-grid" data-aos="fade-up" data-aos-duration="1500">
         {data &&
           activePackages &&
           activePackages.map((doc) => (
@@ -51,14 +54,20 @@ export default function ImageGrid({ setSelectedImg, setSelectedImgData }) {
               layout
               whileHover={{ opacity: 1 }}
             >
-              <motion.img
-                src={doc.image2}
-                alt="uploaded pic"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0 }}
-                data-aos="zoom-in"
-              />
+              <AnimatePresence>
+                <motion.img
+                  src={doc.image2}
+                  alt="uploaded pic"
+                  // initial={{ opacity: 0 }}
+                  // animate={{ opacity: 1 }}
+                  // transition={{ delay: 0.2 }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={0.7}
+                  exit={{ opacity: 0 }}
+                />
+              </AnimatePresence>
+
               <div id="overlay">
                 <div id="project-name">{doc.name}</div>
                 <div id="project-technologies">{doc.technologies}</div>

@@ -54,15 +54,15 @@ export default function About() {
           <Skills skill={"Javascript"} width={80} />
           <Skills skill={"ReactJS"} width={90} />
           <Skills skill={"NodeJS"} width={75} />
-          <Skills skill={"Tensorflow"} width={70} />
-          <Skills skill={"Keras"} width={65} />
+          <Skills skill={"ExpressJS"} width={75} />
           <Skills skill={"Redux"} width={80} />
-          <Skills skill={"UI Tools"} width={40} />
+          <Skills skill={"UI Tools"} width={70} />
           <Skills skill={"NextJS"} width={60} />
           <Skills skill={"Firebase"} width={75} />
           <Skills skill={"GraphQL"} width={70} />
           <Skills skill={"Typescript"} width={50} />
-          <Skills skill={"PassportJS"} width={65} />
+          <Skills skill={"Tensorflow"} width={70} />
+          <Skills skill={"Keras"} width={65} />
         </span>
       </div>
     </div>

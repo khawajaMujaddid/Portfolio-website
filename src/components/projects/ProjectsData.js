@@ -16,7 +16,7 @@ export const data = [
     image: travelguide,
     image2: travelguide2,
     technologies: " React / GraphQL / Apollo-Client ",
-    category: ["React", "Node"],
+    category: ["React"],
     github: "https://github.com/IbadAhmad80/Brando-TravelGuide",
     deployed: "https://brando-travelguide.netlify.app/",
     description:
@@ -26,7 +26,7 @@ export const data = [
     name: "GymHut - Not Responsive",
     image: gym,
     image2: gym2,
-    category: ["React", "Node"],
+    category: ["React", "Redux"],
     technologies: " React / Node ",
     github: "https://github.com/IbadAhmad80/GymHut",
     deployed: "https://gymhut.netlify.app/",
@@ -70,7 +70,7 @@ export const data = [
     image: blogging,
     image2: blogging2,
     technologies: " NextJS / Strapi ",
-    category: ["React", "SASS"],
+    category: ["React", "SASS", "Redux"],
     github: "https://github.com/IbadAhmad80/Blogging-Web_App",
     deployed: "",
     description:

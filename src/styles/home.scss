@@ -26,6 +26,11 @@ body {
     font-weight: bolder;
     color: white;
 
+    @media (max-width: 450px) {
+      font-size: clamp(0.5rem, 0.8rem + 1vw, 7rem);
+      font-weight: lighter !important;
+    }
+
     .scale_in_center {
       -webkit-animation: scale_in_center 1.5s
         cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
@@ -48,8 +53,8 @@ body {
     #view_work_btn {
       @include button();
       text-align: center;
-      height: 4em;
-      padding: 0 2em;
+      height: 3.6em;
+      padding: 0 1.5em;
       color: white;
       display: flex;
       align-items: center;
