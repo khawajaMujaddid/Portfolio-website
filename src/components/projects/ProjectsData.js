@@ -16,23 +16,13 @@ export const data = [
     image: travelguide,
     image2: travelguide2,
     technologies: " React / GraphQL / Apollo-Client ",
-    category: ["React"],
+    category: ["React", "NodeJS"],
     github: "https://github.com/IbadAhmad80/Brando-TravelGuide",
     deployed: "https://brando-travelguide.netlify.app/",
     description:
       "Travel Guide Web App. GraphQL used as an API service with Apollo-Client for react",
   },
-  {
-    name: "GymHut - Not Responsive",
-    image: gym,
-    image2: gym2,
-    category: ["React", "Redux"],
-    technologies: " React / Node ",
-    github: "https://github.com/IbadAhmad80/GymHut",
-    deployed: "https://gymhut.netlify.app/",
-    description:
-      "Gym website created with MERN Stack and Redux as a State Management Tool",
-  },
+
   {
     name: "Buisniss Agency",
     image: worko,
@@ -43,6 +33,17 @@ export const data = [
     deployed: "https://worko.netlify.app/",
     description:
       "Organization Portfolio styled with CSS Framework Bootstrap and JS UI Library React used as a frontend",
+  },
+  {
+    name: "GymHut - Not Responsive",
+    image: gym,
+    image2: gym2,
+    category: ["React", "Redux", "NodeJS"],
+    technologies: " React / Node ",
+    github: "https://github.com/IbadAhmad80/GymHut",
+    deployed: "https://gymhut.netlify.app/",
+    description:
+      "Gym website created with MERN Stack and Redux as a State Management Tool",
   },
   {
     name: "Instagram Clone - Not Responsive",
@@ -59,7 +60,7 @@ export const data = [
     image: portfolio,
     image2: portfolio2,
     technologies: " React / SASS ",
-    category: ["React", "SASS"],
+    category: ["React", "SASS", "NodeJS"],
     github: "https://github.com/IbadAhmad80/Portfolio",
     deployed: "https://findibad.netlify.app/",
     description: "Portfolio website with CSS Proprocessor SASS and React",

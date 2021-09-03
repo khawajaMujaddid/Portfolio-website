@@ -6,8 +6,8 @@ import ReactTypingEffect from "react-typing-effect";
 
 const TypingStyle = {
   letterSpacing: "0.03cm",
-  fontSize: "clamp(1.8rem, 1rem + 2vw, 7rem)",
-  fontWeight: "bolder",
+  fontSize: "clamp(1.4rem, .8rem + 2vw, 7rem)",
+  fontWeight: "lighter",
   color: "white",
 };
 
@@ -15,13 +15,18 @@ export default function Home() {
   return (
     <div style={{ position: "relative" }}>
       <div className={styles.scale_in_center} id="welcome">
-        <h1 data-aos="zoom-out" data-aos-duration={2000}>
-          Hello , I'm <span style={{ color: "rgb(227,27,109)" }}>Ibad.</span>{" "}
+        <h1
+          data-aos="zoom-out"
+          data-aos-duration={2000}
+          style={{ fontWeight: "lighter" }}
+        >
+          Hello , I'm{" "}
+          <span style={{ color: "rgb(227,27,109)" }}>Ibad Ahmad.</span>
           <br />
           I'm&nbsp;
           <span>
             <ReactTypingEffect
-              text={["MERN Developer."]}
+              text={["MERN Stack Developer."]}
               cursorRenderer={(cursor) => <span>{cursor}</span>}
               typingDelay="1200"
               eraseDelay="1500"
@@ -55,30 +60,29 @@ export default function Home() {
           </button>
         </a>
       </div>
-      <div>{/* <Certifications /> */}</div>
 
       <Particles
         id="particles-js"
         params={{
           particles: {
             number: {
-              value: 25,
+              value: 20,
               density: {
                 enable: true,
-                value_area: 700,
+                value_area: 250,
               },
             },
             backgroundImage: {
               value: "linearGradient(rgb(4, 194, 201),rgb(227, 27, 109))",
             },
             opacity: {
-              value: 0.15,
+              value: 1,
               anim: {
-                enable: true,
+                enable: false,
               },
             },
             size: {
-              value: 15,
+              value: 5,
               random: true,
               anim: {
                 enable: true,
@@ -86,7 +90,7 @@ export default function Home() {
               },
             },
             line_linked: {
-              enable: false,
+              enable: true,
             },
             move: {
               speed: 0.45,

@@ -5,6 +5,7 @@
   @extend #about_container;
   background-color: rgb(245, 245, 245);
   padding: 1vh 0 14vh 0;
+
   #heading_container {
     @extend #main_heading_container;
     #heading {
@@ -25,8 +26,11 @@
   .items span {
     padding: 7px 10px;
     margin: 0 10px;
-    font-size: 14px;
+    font-size: 13px;
+    font-family: $primary-font-bold;
     font-weight: 500;
+    font-weight: bold;
+    letter-spacing: 0.01cm;
     cursor: pointer;
     color: $primary-font;
     background-color: transparent;

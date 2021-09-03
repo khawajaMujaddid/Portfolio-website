@@ -2,7 +2,7 @@ import React from "react";
 import "../../styles/contact.scss";
 import ContactForm from "./Form";
 
-import { BsBoxArrowInUp } from "react-icons/bs";
+import { BiArrowToTop } from "react-icons/bi";
 
 export default function ContactUS() {
   return (
@@ -32,7 +32,7 @@ export default function ContactUS() {
         }}
       >
         <a href="#home" style={upArrow} id="topArrow">
-          <BsBoxArrowInUp />
+          <BiArrowToTop />
         </a>
       </div>
     </>
@@ -46,6 +46,7 @@ const upArrow = {
   cursor: "pointer",
   backgroundColor: "rgb(248,30,119)",
   color: "white",
-  fontSize: "22pt",
+  fontSize: "25pt",
+  fontWeight: "bolder",
   zIndex: "100",
 };

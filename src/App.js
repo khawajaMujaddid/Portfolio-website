@@ -8,6 +8,7 @@ import Home from "./components/home";
 import Footer from "./components/footer";
 import Projects from "./components/projects";
 import Aos from "aos";
+import "aos/dist/aos.css";
 
 function debounce(fn, ms) {
   let timer;
@@ -32,6 +33,7 @@ function App() {
       offset: 200, // offset (in px) from the original trigger point
       duration: 1000, // values from 0 to 3000, with step 50m
     });
+
     // screen width eventlistner
     const debouncedHandleResize = debounce(function handleResize() {
       setDimensions({

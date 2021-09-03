@@ -1,5 +1,5 @@
 import React from "react";
-import { AiFillGithub, AiFillLinkedin, AiFillFacebook } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { FaStackOverflow } from "react-icons/fa";
 import "../../styles/footer.scss";
 
@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <div id="footer-container">
       <div id="icons-container" data-aos="fade-right" data-aos-offset="10">
-        <div id="social-icon">
+        {/* <div id="social-icon">
           <a
             href="https://www.facebook.com/?react=AQDaeXFepi_ZImXLzCU"
             target="blank"
@@ -15,7 +15,7 @@ export default function Footer() {
           >
             <AiFillFacebook />
           </a>
-        </div>
+        </div> */}
         <div id="social-icon">
           <a
             href="https://linkedin.com/in/ibad-ahmad"
