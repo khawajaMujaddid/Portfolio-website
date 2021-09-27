@@ -8,6 +8,9 @@ export default function Projects() {
   const [selectedImgData, setSelectedImgData] = React.useState({
     description: null,
     deployed: null,
+    technologies: null,
+    name: null,
+    month_created: null,
   });
 
   return (

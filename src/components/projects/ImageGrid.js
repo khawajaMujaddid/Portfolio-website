@@ -80,11 +80,16 @@ export default function ImageGrid({ setSelectedImg, setSelectedImgData }) {
                 <button
                   id="project-modal-btn"
                   onClick={() => {
-                    setSelectedImg(doc.image);
+                    // document.querySelector("body").style.overflow = "hidden";
+                    setSelectedImg(doc.images);
                     setSelectedImgData({
                       description: doc.description,
                       deployed: doc.deployed,
                       github: doc.github,
+                      name: doc.name,
+                      technologies: doc.category,
+                      month_created: doc.month_created,
+                      role: doc.role,
                     });
                   }}
                 >

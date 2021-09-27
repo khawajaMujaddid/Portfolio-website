@@ -34,5 +34,9 @@ $primary-2-color: rgb(4, 194, 201);
 @mixin modal-design() {
   width: 85%;
   margin: 0 auto;
-  @content;
+
+  @media (min-width: 1000px) {
+    width: 72%;
+    @content;
+  }
 }

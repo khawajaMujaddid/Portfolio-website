@@ -1,26 +1,28 @@
 import React from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { FaStackOverflow } from "react-icons/fa";
+import { FaStackOverflow, FaHackerrank } from "react-icons/fa";
 import "../../styles/footer.scss";
 
 export default function Footer() {
   return (
     <div id="footer-container">
       <div id="icons-container" data-aos="fade-right" data-aos-offset="10">
-        {/* <div id="social-icon">
-          <a
-            href="https://www.facebook.com/?react=AQDaeXFepi_ZImXLzCU"
-            target="blank"
-            style={{ color: "inherit" }}
-          >
-            <AiFillFacebook />
-          </a>
-        </div> */}
         <div id="social-icon">
           <a
-            href="https://linkedin.com/in/ibad-ahmad"
+            href="https://www.hackerrank.com/IbadAhmad"
             target="blank"
             style={{ color: "inherit" }}
+            title="HackerRank"
+          >
+            <FaHackerrank />
+          </a>
+        </div>
+        <div id="social-icon">
+          <a
+            href="www.linkedin.com/in/ibad-ahmad"
+            target="blank"
+            style={{ color: "inherit" }}
+            title="Linkedin"
           >
             <AiFillLinkedin />
           </a>
@@ -30,6 +32,7 @@ export default function Footer() {
             href="https://github.com/IbadAhmad80"
             target="blank"
             style={{ color: "inherit" }}
+            title="Github"
           >
             <AiFillGithub />
           </a>
@@ -39,6 +42,7 @@ export default function Footer() {
             href="https://stackoverflow.com/users/story/14998000?view=Timeline"
             target="blank"
             style={{ color: "inherit" }}
+            title="StackOverFlow"
           >
             <FaStackOverflow />
           </a>
