@@ -1,39 +1,39 @@
-import React from "react";
-import Particles from "react-particles-js";
-import styles from "../../styles/home.scss";
-import { AiOutlineArrowRight } from "react-icons/ai";
-import ReactTypingEffect from "react-typing-effect";
+import React from 'react';
+import Particles from 'react-particles-js';
+import styles from '../../styles/home.scss';
+import { AiOutlineArrowRight } from 'react-icons/ai';
+import ReactTypingEffect from 'react-typing-effect';
 
 const TypingStyle = {
-  letterSpacing: "0.03cm",
-  fontSize: "clamp(1.4rem, .8rem + 2vw, 7rem)",
-  fontWeight: "lighter",
-  color: "white",
+  letterSpacing: '0.03cm',
+  fontSize: 'clamp(1.4rem, .8rem + 2vw, 7rem)',
+  fontWeight: 'lighter',
+  color: 'white',
 };
 
 export default function Home() {
   return (
-    <div style={{ position: "relative" }}>
-      <div className={styles.scale_in_center} id="welcome">
+    <div style={{ position: 'relative' }}>
+      <div className={styles.scale_in_center} id='welcome'>
         <h1
-          data-aos="zoom-out"
+          data-aos='zoom-out'
           data-aos-duration={2000}
-          style={{ fontWeight: "lighter" }}
+          style={{ fontWeight: 'lighter' }}
         >
-          Hello , I'm{" "}
-          <span style={{ color: "rgb(227,27,109)" }}>Ibad Ahmad.</span>
+          Hello , I'm{' '}
+          <span style={{ color: 'rgb(227,27,109)' }}>Mujaddid Mahmood.</span>
           <br />
           I'm&nbsp;
           <span>
             <ReactTypingEffect
-              text={["MERN Stack Developer."]}
+              text={['RoR Full Stack Developer.']}
               cursorRenderer={(cursor) => <span>{cursor}</span>}
-              typingDelay="1200"
-              eraseDelay="1500"
+              typingDelay='1200'
+              eraseDelay='1500'
               displayTextRenderer={(text) => {
                 return (
                   <div>
-                    {text.split("").map((char, i) => {
+                    {text.split('').map((char, i) => {
                       return (
                         <span key={i} style={TypingStyle}>
                           {char}
@@ -48,12 +48,12 @@ export default function Home() {
         </h1>
         <br />
         <a
-          href="#projects"
-          style={{ textDecoration: "none", color: "inherit" }}
+          href='#projects'
+          style={{ textDecoration: 'none', color: 'inherit' }}
         >
-          <button id="view_work_btn">
+          <button id='view_work_btn'>
             View My Work
-            <p id="workbtn_logo">
+            <p id='workbtn_logo'>
               &nbsp;&nbsp;
               <AiOutlineArrowRight />
             </p>
@@ -62,7 +62,7 @@ export default function Home() {
       </div>
 
       <Particles
-        id="particles-js"
+        id='particles-js'
         params={{
           particles: {
             number: {
@@ -73,7 +73,7 @@ export default function Home() {
               },
             },
             backgroundImage: {
-              value: "linearGradient(rgb(4, 194, 201),rgb(227, 27, 109))",
+              value: 'linearGradient(rgb(4, 194, 201),rgb(227, 27, 109))',
             },
             opacity: {
               value: 1,
