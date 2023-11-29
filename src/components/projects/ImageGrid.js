@@ -1,17 +1,17 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { data } from "./ProjectsData";
-import AOS from "aos";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { data } from './ProjectsData';
+import AOS from 'aos';
 
 export default function ImageGrid({ setSelectedImg, setSelectedImgData }) {
   // const { loading, data } = useQuery(getPackages);
-  const [selectedCategory, setSelectedCatgeory] = React.useState("all");
+  const [selectedCategory, setSelectedCatgeory] = React.useState('all');
   const [activePackages, setActivePackages] = React.useState(null);
 
   React.useEffect(() => {
-    document.querySelector(".active").classList.remove("active"); //getting the active category
-    document.querySelector(`.${selectedCategory}`).classList.add("active"); //removing the active category
-    if (selectedCategory === "all") {
+    document.querySelector('.active').classList.remove('active'); //getting the active category
+    document.querySelector(`.${selectedCategory}`).classList.add('active'); //removing the active category
+    if (selectedCategory === 'all') {
       setActivePackages(data);
       return;
     } // if cateogry is all then return projects from all categories
@@ -31,36 +31,33 @@ export default function ImageGrid({ setSelectedImg, setSelectedImgData }) {
 
   return (
     <div>
-      <div className="items">
+      <div className='items'>
         <span
-          className="item all active"
-          onClick={() => setSelectedCatgeory("all")}
+          className='item all active'
+          onClick={() => setSelectedCatgeory('all')}
         >
           React
         </span>
         <span
-          className="item NodeJS"
-          onClick={() => setSelectedCatgeory("NodeJS")}
+          className='item NodeJS'
+          onClick={() => setSelectedCatgeory('NodeJS')}
         >
           Node
         </span>
-        <span
-          className="item Redux"
-          onClick={() => setSelectedCatgeory("Redux")}
-        >
-          Redux
+        <span className='item RoR' onClick={() => setSelectedCatgeory('RoR')}>
+          Ruby on Rails
         </span>
 
-        <span className="item SASS" onClick={() => setSelectedCatgeory("SASS")}>
+        <span className='item SASS' onClick={() => setSelectedCatgeory('SASS')}>
           SASS
         </span>
       </div>
-      <div id="img-grid" data-aos="fade-up" data-aos-duration="1500">
+      <div id='img-grid' data-aos='fade-up' data-aos-duration='1500'>
         {data &&
           activePackages &&
           activePackages.map((doc) => (
             <motion.div
-              id="img-wrap"
+              id='img-wrap'
               key={doc.name}
               layout
               whileHover={{ opacity: 1 }}
@@ -70,15 +67,15 @@ export default function ImageGrid({ setSelectedImg, setSelectedImgData }) {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0 }}
-                alt="uploaded pic"
+                alt='uploaded pic'
               />
 
-              <div id="overlay">
-                <div id="project-name">{doc.name}</div>
-                <div id="project-technologies">{doc.technologies}</div>
+              <div id='overlay'>
+                <div id='project-name'>{doc.name}</div>
+                <div id='project-technologies'>{doc.technologies}</div>
 
                 <button
-                  id="project-modal-btn"
+                  id='project-modal-btn'
                   onClick={() => {
                     // document.querySelector("body").style.overflow = "hidden";
                     setSelectedImg(doc.images);

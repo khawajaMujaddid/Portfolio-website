@@ -1,4 +1,4 @@
-@import "./config.scss";
+@import './config.scss';
 /*Desktop View*/
 
 .header {
@@ -25,6 +25,7 @@
   .logo {
     width: 3.5em;
     height: 3em;
+    mix-blend-mode: multiply;
   }
   .nav_options {
     padding-left: 55px;

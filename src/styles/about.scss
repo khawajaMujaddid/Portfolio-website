@@ -1,4 +1,4 @@
-@import "./config.scss";
+@import './config.scss';
 
 #about_container {
   margin: 10vh 0;
@@ -101,17 +101,10 @@
 
     #profile-container {
       #profile-image {
-        clip-path: polygon(
-          25% 0%,
-          75% 0%,
-          100% 50%,
-          75% 100%,
-          25% 100%,
-          0% 50%
-        );
+        border-radius: 50%;
         height: 50vh;
-        background-image: url(../assets/dummy-person.png);
-        background-size: 100% 120%;
+        background-image: url(../assets/my-picture.jpg);
+        background-size: 100% 100%;
         background-color: $primary-2-color;
         background-repeat: no-repeat;
       }
