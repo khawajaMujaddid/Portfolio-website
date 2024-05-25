@@ -7,13 +7,9 @@ export default function Introduction() {
       <div id='profile-introduction'>
         <h5 id='who-this'>Intro</h5>
         <p id='who-this-description'>
-          A skilled <b>Software Engineer</b> with over 5 years of experience in
-          Software Development. I possess in-depth knowledge of JavaScript(es6),
-          reactjs, JQuery, Bootstrap, tailwindcss, Postgresql, and Git, along
-          with extensive expertise in <b>Ruby on Rails</b>. I am a dedicated
-          individual that likes to take on new challenges and put his skills to
-          the test. I am always eager to learn new technologies to enhance my
-          skill set and stay ahead of the curve. <br />
+          A passionate software engineer with expertise in full-stack development. I excel in creating innovative solutions using technologies like JavaScript, Ruby on Rails, Vuejs, React, Node.js. I am always eager to learn new technologies to enhance my skill set and stay ahead of the curve.
+
+          This portfolio showcases my work, highlighting my skills in building scalable, user-friendly applications. Thank you for visiting, and I look forward to connecting with you! <br />
           <span style={{ justifyContent: 'center' }}>
             <a
               href='#contact'
